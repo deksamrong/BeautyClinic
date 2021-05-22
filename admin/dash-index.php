@@ -114,7 +114,7 @@ $totalrejapt=mysqli_num_rows($query4);
 ?>
 						<div class="stats-left ">
 							<h5>Total</h5>
-							<h4>Rejected Apt</h4>
+							<h4>ยกเลิกการจอง</h4>
 						</div>
 						<div class="stats-right">
 							<label> <?php echo $totalrejapt;?></label>
@@ -127,7 +127,7 @@ $totalser=mysqli_num_rows($query5);
 ?>
 						<div class="stats-left">
 							<h5>Total</h5>
-							<h4>Services</h4>
+							<h4>บริการ</h4>
 						</div>
 						<div class="stats-right">
 							<label> <?php echo $totalser;?></label>

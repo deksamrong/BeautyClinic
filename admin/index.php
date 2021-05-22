@@ -21,7 +21,7 @@ if(isset($_POST['login']))
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>BPMS | Login Page </title>
+<title>ระบบจัดการจองบริการคลินิคความงาม | Login Page </title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
@@ -51,7 +51,7 @@ if(isset($_POST['login']))
 <link href="css/custom.css" rel="stylesheet">
 <!--//Metis Menu -->
 </head> 
-<body class="cbp-spmenu-push">
+<body >
 	<div class="main-content">
 		
 		<!-- main content start-->
