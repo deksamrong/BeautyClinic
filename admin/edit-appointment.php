@@ -72,11 +72,11 @@ while ($row=mysqli_fetch_array($ret)) {
 ?>
 						<table class="table table-bordered">
 							<tr>
-    <th>Appointment Number</th>
+    <th>หมายเลขจอง</th>
     <td><?php  echo $row['AptNumber'];?></td>
   </tr>
   <tr>
-<th>Name</th>
+<th>ชื่อ</th>
     <td><?php  echo $row['Name'];?></td>
   </tr>
 
@@ -85,25 +85,25 @@ while ($row=mysqli_fetch_array($ret)) {
     <td><?php  echo $row['Email'];?></td>
   </tr>
    <tr>
-    <th>Mobile Number</th>
+    <th>เบอร์ติดต่อ</th>
     <td><?php  echo $row['PhoneNumber'];?></td>
   </tr>
    <tr>
-    <th>Appointment Date</th>
+    <th>วันที่จอง</th>
     <td><?php  echo $row['AptDate'];?></td>
   </tr>
  
 <tr>
-    <th>Appointment Time</th>
+    <th>เวลาจอง</th>
     <td><?php  echo $row['AptTime'];?></td>
   </tr>
   
   <tr>
-    <th>Services</th>
+    <th>บริการ</th>
     <td><?php  echo $row['Services'];?></td>
   </tr>
   <tr>
-    <th>Apply Date</th>
+    <th>วันที่ยืนยัน</th>
     <td><?php  echo $row['ApplyDate'];?></td>
   </tr>
   
