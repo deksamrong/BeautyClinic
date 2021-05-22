@@ -6,8 +6,7 @@
         <!--logo -->
         <div class="logo">
           <a href="index.html">
-            <h1>BPMS</h1>
-            <span>AdminPanel</span>
+           
           </a>
         </div>
         <!--//logo-->
@@ -29,7 +28,7 @@ $num=mysqli_num_rows($ret1);
               <ul class="dropdown-menu">
                 <li>
                   <div class="notification_header">
-                    <h3>You have <?php echo $num;?> new notification</h3>
+                    <h3>You have <?php echo $num;?> การแจ้งเตือนใหม่</h3>
                   </div>
                 </li>
                 <li>
@@ -73,10 +72,10 @@ $name=$row['AdminName'];
             <li class="dropdown profile_details_drop">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                 <div class="profile_img"> 
-                  <span class="prfil-img"><img src="images/download (1).png" alt="" width="50" height="60"> </span> 
+                  <span class="prfil-img"> </span> 
                   <div class="user-name">
                     <p><?php echo $name; ?></p>
-                    <span>Administrator</span>
+                    
                   </div>
                   <i class="fa fa-angle-down lnr"></i>
                   <i class="fa fa-angle-up lnr"></i>
@@ -84,9 +83,9 @@ $name=$row['AdminName'];
                 </div>  
               </a>
               <ul class="dropdown-menu drp-mnu">
-                <li> <a href="change-password.php"><i class="fa fa-cog"></i> Settings</a> </li> 
-                <li> <a href="admin-profile.php"><i class="fa fa-user"></i> Profile</a> </li> 
-                <li> <a href="index.php"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                <li> <a href="change-password.php"><i class="fa fa-cog"></i> ตั้งค่า</a> </li> 
+                <li> <a href="admin-profile.php"><i class="fa fa-user"></i> ข้อมูลส่วนตัว</a> </li> 
+                <li> <a href="index.php"><i class="fa fa-sign-out"></i> ออกจากระบบ</a> </li>
               </ul>
             </li>
           </ul>

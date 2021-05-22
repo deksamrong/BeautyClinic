@@ -18,7 +18,7 @@ $pagedes=$_POST['pagedes'];
   }
   else
     {
-      $msg="Something Went Wrong. Please try again";
+      $msg="มีบางอย่างผิดพลาด กรุณาลองใหม่อีกครั้ง";
     }
 
   

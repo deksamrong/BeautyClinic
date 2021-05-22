@@ -1,5 +1,5 @@
 <!--footer-->
     <div class="footer">
-       <p>&copy; 2019 BPMS Admin Panel.</p>
+       <p>&copy; 2021 ระบบจัดการจองบริการคลีนิคความงาม.</p>
     </div>
         <!--//footer-->

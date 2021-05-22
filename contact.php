@@ -6,9 +6,7 @@ include('includes/dbconnection.php');
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Contact us</title>
-    
-    
+    <title>Contact us</title>    
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
