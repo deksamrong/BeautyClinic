@@ -33,7 +33,7 @@ $result=mysqli_fetch_array($ret);
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>คลินิกเสริมความงาม||Home Page</title>
+    <title>คลินิกเสริมความงาม|Home Page</title>
         
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
