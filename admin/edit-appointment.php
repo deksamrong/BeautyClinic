@@ -54,7 +54,7 @@ if (strlen($_SESSION['bpmsaid']==0)) {
 		<div id="page-wrapper">
 			<div class="main-page">
 				<div class="tables">
-					<h3 class="title1">All Appointment</h3>
+					<h3 class="title1">รายการจองทั้งหมด</h3>
 					
 					
 				
@@ -62,7 +62,7 @@ if (strlen($_SESSION['bpmsaid']==0)) {
 						<p style="font-size:16px; color:red" align="center"> <?php if($msg){
     echo $msg;
   }  ?> </p>
-						<h4>All Appointment:</h4>
+						<h4>การจองทั้งหมด:</h4>
 						<?php
 $cid=$_GET['editid'];
 $ret=mysqli_query($con,"select * from tblappointment where ID='$cid'");
