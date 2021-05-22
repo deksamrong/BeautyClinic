@@ -55,9 +55,7 @@ if (strlen($_SESSION['bpmsaid']==0)) {
 			<div class="main-page">
 				<div class="tables">
 					<h3 class="title1">รายการจองทั้งหมด</h3>
-					
-					
-				
+
 					<div class="table-responsive bs-example widget-shadow">
 						<p style="font-size:16px; color:red" align="center"> <?php if($msg){
     echo $msg;

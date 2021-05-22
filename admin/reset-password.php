@@ -22,7 +22,7 @@ session_destroy();
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>BPMS | Reset Page </title>
+<title>ระบบจัดการจองบริการ | Reset Page </title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
@@ -71,10 +71,10 @@ return true;
 		<!-- main content start-->
 		<div id="page-wrapper">
 			<div class="main-page login-page ">
-				<h3 class="title1">Reset Page</h3>
+				<h3 class="title1">หน้ารีเซต</h3>
 				<div class="widget-shadow">
 					<div class="login-top">
-						<h4>Welcome back to BPMS AdminPanel ! </h4>
+						<h4>ระบบจัดการจองบริการ! </h4>
 					</div>
 					<div class="login-body">
 						<form role="form" method="post" action="" name="changepassword" onsubmit="return checkpass();">
@@ -89,7 +89,7 @@ return true;
 							<div class="forgot-grid">
 								
 								<div class="forgot">
-									<a href="index.php">Already have an account</a>
+									<a href="index.php">หากมีบัญชีอยู่แล้ว</a>
 								</div>
 								<div class="clearfix"> </div>
 							</div>

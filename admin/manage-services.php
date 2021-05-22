@@ -59,8 +59,8 @@ if (strlen($_SESSION['bpmsaid']==0)) {
 					
 				
 					<div class="table-responsive bs-example widget-shadow">
-						<h4>Update Services:</h4>
-						<table class="table table-bordered"> <thead> <tr> <th>#</th> <th>ชื่อบริการ</th> <th>Service Price</th> <th>Creation Date</th><th>Action</th> </tr> </thead> <tbody>
+						<h4>แก้ไขบริการของคลีนิค:</h4>
+						<table class="table table-bordered"> <thead> <tr> <th>#</th> <th>ชื่อบริการ</th> <th>ราคา</th> <th>Creation Date</th><th>Action</th> </tr> </thead> <tbody>
 <?php
 $ret=mysqli_query($con,"select *from  tblservices");
 $cnt=1;
