@@ -80,11 +80,11 @@ echo "<script>alert('Something Went Wrong. Please try again.');</script>";
   }  ?> </p>
 
   
-							 <div class="form-group"> <label for="exampleInputEmail1">Name</label> <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" value="" required="true"> </div> <div class="form-group"> <label for="exampleInputPassword1">Email</label> <input type="email" id="email" name="email" class="form-control" placeholder="Email" value="" required="true"> </div>
-							 <div class="form-group"> <label for="exampleInputEmail1">Mobile Number</label> <input type="text" class="form-control" id="mobilenum" name="mobilenum" placeholder="Mobile Number" value="" required="true" maxlength="10" pattern="[0-9]+"> </div>
+							 <div class="form-group"> <label for="exampleInputEmail1">ชื่อ</label> <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" value="" required="true"> </div> <div class="form-group"> <label for="exampleInputPassword1">Email</label> <input type="email" id="email" name="email" class="form-control" placeholder="Email" value="" required="true"> </div>
+							 <div class="form-group"> <label for="exampleInputEmail1">หมายเลขโทรศัพท์</label> <input type="text" class="form-control" id="mobilenum" name="mobilenum" placeholder="Mobile Number" value="" required="true" maxlength="10" pattern="[0-9]+"> </div>
 							 <div class="radio">
 
-                               <p style="padding-top: 20px; font-size: 15px"> <strong>Gender:</strong> <label>
+                               <p style="padding-top: 20px; font-size: 15px"> <strong>เพศ:</strong> <label>
                                     <input type="radio" name="gender" id="gender" value="Female" checked="true">
                                     Female
                                 </label>
@@ -97,9 +97,9 @@ echo "<script>alert('Something Went Wrong. Please try again.');</script>";
                                    Transgender
                                 </label></p>
                             </div>
-							 	<div class="form-group"> <label for="exampleInputEmail1">Details</label> <textarea type="text" class="form-control" id="details" name="details" placeholder="Details" required="true" rows="12" cols="4"></textarea> </div>
+							 	<div class="form-group"> <label for="exampleInputEmail1">รายละเอียด</label> <textarea type="text" class="form-control" id="details" name="details" placeholder="Details" required="true" rows="12" cols="4"></textarea> </div>
 							
-							  <button type="submit" name="submit" class="btn btn-default">Add</button> </form> 
+							  <button type="submit" name="submit" class="btn btn-default">เพิ่ม</button> </form> 
 						</div>
 						
 					</div>
