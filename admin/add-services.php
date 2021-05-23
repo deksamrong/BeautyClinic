@@ -10,9 +10,6 @@ if(isset($_POST['submit']))
   {
     $sername=$_POST['sername'];
     $cost=$_POST['cost'];
-   
-
-     
     $query=mysqli_query($con, "insert into  tblservices(ServiceName,Cost) value('$sername','$cost')");
     if ($query) {
     	echo "<script>alert('เพิ่มบริการสำเร็จ.');</script>"; 

@@ -1,7 +1,7 @@
 <?php 
-include('includes/dbconnection.php');
 session_start();
 error_reporting(0);
+include('includes/dbconnection.php');
 if(isset($_POST['submit']))
   {
 ////jksld
@@ -12,26 +12,26 @@ if(isset($_POST['submit']))
     $atime=$_POST['atime'];
     $phone=$_POST['phone'];
     $aptnumber = mt_rand(100000000, 999999999);
-	include('includes/dbconnection.php');
     $query=mysqli_query($con,"insert into tblappointment(AptNumber,Name,Email,PhoneNumber,AptDate,AptTime,Services) value('$aptnumber','$name','$email','$phone','$adate','$atime','$services')");
 
-//if ($query) {
-//$ret=mysqli_query($con,"select AptNumber from tblappointment where Email='$email' and  PhoneNumber='$phone'");
-//$result=mysqli_fetch_array($ret);
-//$_SESSION['aptno']=$result['AptNumber'];
- echo "บันทึดสำเร็จ";	
- // }
- // else
- //   {
- //     $msg="มีบางอย่างผิดพลาด กรุณาลองใหม่อีกครั้ง";
- //   }
+if ($query) {
+$ret=mysqli_query($con,"select AptNumber from tblappointment where Email='$email' and  PhoneNumber='$phone'");
+$result=mysqli_fetch_array($ret);
+$_SESSION['aptno']=$result['AptNumber'];
+echo "<script>alert('จองบริการสำเร็จ.');</script>"; 	
+echo "<script>window.location.href = 'thank-you.php'</script>";
+  }
+  else
+    {
+      $msg="มีบางอย่างผิดพลาด กรุณาลองใหม่อีกครั้ง";
+    }
 }
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>คลินิกเสริมความงาม|Home Page</title>
+    <title>คลินิกเสริมความงาม| ยินดีต้อนรับ</title>
         
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
@@ -160,6 +160,7 @@ if(isset($_POST['submit']))
 			              </div>
 				          </div>
 				          <div class="form-group">
+						  <button type="submit" name="submit" class="btn btn-default">ตกลง</button>
 						 <input type="submit" value="Submit" name="submit" class="btn btn-primary"/>
 			              
 			            </div>
