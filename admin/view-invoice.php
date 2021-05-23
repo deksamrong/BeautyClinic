@@ -12,7 +12,7 @@ if (strlen($_SESSION['bpmsaid']==0)) {
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>BPMS || Customer List</title>
+<title>ระบบจัดการคลินิกความงาม</title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
@@ -54,7 +54,7 @@ if (strlen($_SESSION['bpmsaid']==0)) {
 		<div id="page-wrapper">
 			<div class="main-page">
 				<div class="tables" id="exampl">
-					<h3 class="title1">Invoice Details</h3>
+					<h3 class="title1">รายละเอียด</h3>
 					
 	<?php
 	$invid=intval($_GET['invoiceid']);
@@ -68,35 +68,35 @@ while ($row=mysqli_fetch_array($ret)) {
 ?>				
 				
 					<div class="table-responsive bs-example widget-shadow">
-						<h4>Invoice #<?php echo $invid;?></h4>
+						<h4>บิลขาย #<?php echo $invid;?></h4>
 						<table class="table table-bordered" width="100%" border="1"> 
 <tr>
-<th colspan="6">Customer Details</th>	
+<th colspan="6">รายละเอียดลูกค้า</th>	
 </tr>
 							 <tr> 
-								<th>Name</th> 
+								<th>ชื่อ</th> 
 								<td><?php echo $row['Name']?></td> 
-								<th>Contact no.</th> 
+								<th>เบอร์ติดต่อ.</th> 
 								<td><?php echo $row['MobileNumber']?></td>
 								<th>Email </th> 
 								<td><?php echo $row['Email']?></td>
 							</tr> 
 							 <tr> 
-								<th>Gender</th> 
+								<th>เพศ</th> 
 								<td><?php echo $row['Gender']?></td> 
-								<th>Invoice Date</th> 
+								<th>วันที่</th> 
 								<td colspan="3"><?php echo $row['PostingDate']?></td> 
 							</tr> 
 <?php }?>
 </table> 
 <table class="table table-bordered" width="100%" border="1"> 
 <tr>
-<th colspan="3">Services Details</th>	
+<th colspan="3">รายละเอียดบริการ</th>	
 </tr>
 <tr>
 <th>#</th>	
-<th>Service</th>
-<th>Cost</th>
+<th>บริการ</th>
+<th>ราคา</th>
 </tr>
 
 <?php
@@ -119,7 +119,7 @@ $gtotal+=$subtotal;
 } ?>
 
 <tr>
-<th colspan="2" style="text-align:center">Grand Total</th>
+<th colspan="2" style="text-align:center">ราคารวม</th>
 <th><?php echo $gtotal?></th>	
 
 </tr>

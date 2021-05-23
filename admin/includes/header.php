@@ -28,7 +28,7 @@ $num=mysqli_num_rows($ret1);
               <ul class="dropdown-menu">
                 <li>
                   <div class="notification_header">
-                    <h3>You have <?php echo $num;?> การแจ้งเตือนใหม่</h3>
+                    <h3>มี <?php echo $num;?> การแจ้งเตือนใหม่</h3>
                   </div>
                 </li>
                 <li>
@@ -38,9 +38,9 @@ $num=mysqli_num_rows($ret1);
 while($result=mysqli_fetch_array($ret1))
 {
             ?>
-                 <a class="dropdown-item" href="view-appointment.php?viewid=<?php echo $result['ID'];?>">New appointment received from <?php echo $result['Name'];?> </a><br />
+                 <a class="dropdown-item" href="view-appointment.php?viewid=<?php echo $result['ID'];?>">มีการจองมาใหมโดย <?php echo $result['Name'];?> </a><br />
 <?php }} else {?>
-    <a class="dropdown-item" href="all-appointment.php">No New Appointment Received</a>
+    <a class="dropdown-item" href="all-appointment.php">ยังไม่มีรายการจอง</a>
         <?php } ?>
                            
                   </div>
@@ -50,7 +50,7 @@ while($result=mysqli_fetch_array($ret1))
                 
                  <li>
                   <div class="notification_bottom">
-                    <a href="new-appointment.php">See all notifications</a>
+                    <a href="new-appointment.php">ดูการแจ้งเตือนทั้งหมด</a>
                   </div> 
                 </li>
               </ul>

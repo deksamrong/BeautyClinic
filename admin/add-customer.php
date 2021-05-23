@@ -17,16 +17,16 @@ $details=$_POST['details'];
      
     $query=mysqli_query($con, "insert into  tblcustomers(Name,Email,MobileNumber,Gender,Details) value('$name','$email','$mobilenum','$gender','$details')");
     if ($query) {
-echo "<script>alert('Customer has been added.');</script>"; 
+echo "<script>alert('บันทึกข้อมูลสำเร็จ.');</script>"; 
 echo "<script>window.location.href = 'add-customer.php'</script>"; 
  } else {
-echo "<script>alert('Something Went Wrong. Please try again.');</script>";  	
+echo "<script>alert('มีบางอย่างผิดพลาด. กรุณาลองใหม่อีกครั้ง.');</script>";  	
 } }
   ?>
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>BPMS | Add Services</title>
+<title>ระบบจัดการคลินิกความงาม </title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
@@ -86,11 +86,11 @@ echo "<script>alert('Something Went Wrong. Please try again.');</script>";
 
                                <p style="padding-top: 20px; font-size: 15px"> <strong>เพศ:</strong> <label>
                                     <input type="radio" name="gender" id="gender" value="Female" checked="true">
-                                    Female
+                                    หญิง
                                 </label>
                                 <label>
                                     <input type="radio" name="gender" id="gender" value="Male">
-                                    Male
+                                    ชาย
                                 </label>
                                 <label>
                                     <input type="radio" name="gender" id="gender" value="Transgender">
