@@ -2,7 +2,6 @@
 include('includes/dbconnection.php');
 session_start();
 error_reporting(0);
-include('includes/dbconnection.php');
 if(isset($_POST['submit']))
   {
 ////jksld
@@ -13,20 +12,19 @@ if(isset($_POST['submit']))
     $atime=$_POST['atime'];
     $phone=$_POST['phone'];
     $aptnumber = mt_rand(100000000, 999999999);
-  
+	include('includes/dbconnection.php');
     $query=mysqli_query($con,"insert into tblappointment(AptNumber,Name,Email,PhoneNumber,AptDate,AptTime,Services) value('$aptnumber','$name','$email','$phone','$adate','$atime','$services')");
-    if ($query) {
-$ret=mysqli_query($con,"select AptNumber from tblappointment where Email='$email' and  PhoneNumber='$phone'");
-$result=mysqli_fetch_array($ret);
-//$_SESSION['aptno']=$result['AptNumber'];
- echo "<script>window.location.href='thank-you.php'</script>";	
-  }
-  else
-    {
-      $msg="Something Went Wrong. Please try again";
-    }
 
-  
+//if ($query) {
+//$ret=mysqli_query($con,"select AptNumber from tblappointment where Email='$email' and  PhoneNumber='$phone'");
+//$result=mysqli_fetch_array($ret);
+//$_SESSION['aptno']=$result['AptNumber'];
+ echo "บันทึดสำเร็จ";	
+ // }
+ // else
+ //   {
+ //     $msg="มีบางอย่างผิดพลาด กรุณาลองใหม่อีกครั้ง";
+ //   }
 }
 
 ?>
@@ -71,9 +69,9 @@ $result=mysqli_fetch_array($ret);
 	          	<img class="one-third align-self-end order-md-last img-fluid" src="images/bg_1.png" alt="">
 		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text mt-5">
-		          		<span class="subheading">Beauty Parlour</span>
-			            <h1 class="mb-4">Get Pretty Look</h1>
-			            <p class="mb-4">We pride ourselves on our high quality work and attention to detail. The products we use are of top quality branded products.</p>
+		          		<span class="subheading">ทดสอบ</span>
+			            <h1 class="mb-4">เสริมจมูก</h1>
+			            <p class="mb-4">วันนี้.</p>
 			            
 			           
 		            </div>
@@ -117,7 +115,7 @@ $result=mysqli_fetch_array($ret);
     					<div class="appointment-wrap">
     						<span class="subheading">รายการจอง</span>
 								<h3 class="mb-2">ทำการจอง</h3>
-		    				<form action="#" method="post" class="appointment-form">
+		    	<form action="" method="post" class="appointment-form">
 			            <div class="row">
 			              <div class="col-sm-12">
 			                <div class="form-group">
@@ -162,7 +160,8 @@ $result=mysqli_fetch_array($ret);
 			              </div>
 				          </div>
 				          <div class="form-group">
-			              <input type="submit" name="submit" value="ทำรายการ" class="btn btn-primary">
+						 <input type="submit" value="Submit" name="submit" class="btn btn-primary"/>
+			              
 			            </div>
 			          </form>
 		          </div>

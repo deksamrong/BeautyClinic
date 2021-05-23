@@ -54,13 +54,13 @@ if (strlen($_SESSION['bpmsaid']==0)) {
 		<div id="page-wrapper">
 			<div class="main-page">
 				<div class="tables">
-					<h3 class="title1">New Appointment</h3>
+					<h3 class="title1">รายการจองมาใหม่</h3>
 					
 					
 				
 					<div class="table-responsive bs-example widget-shadow">
-						<h4>New Appointment:</h4>
-						<table class="table table-bordered"> <thead> <tr> <th>#</th> <th> Appointment Number</th> <th>Name</th><th>Mobile Number</th> <th>Appointment Date</th><th>Appointment Time</th><th>Action</th> </tr> </thead> <tbody>
+						<h4>รายการจองมาใหม่:</h4>
+						<table class="table table-bordered"> <thead> <tr> <th>#</th> <th> หลายเลขการจอง</th> <th>ชื่อ</th><th>เบอร์ติดต่อ</th> <th>วันที่จอง</th><th>เวลาจอง</th><th>Action</th> </tr> </thead> <tbody>
 <?php
 $ret=mysqli_query($con,"select *from  tblappointment where Status=''");
 $cnt=1;

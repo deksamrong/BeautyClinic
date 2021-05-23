@@ -69,7 +69,7 @@ while ($row=mysqli_fetch_array($ret)) {
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-phone2"></span>
           		</div>
-          		<h3 class="mb-4">Contact Number</h3>
+          		<h3 class="mb-4">เบรอ์ติดต่อ</h3>
 	            <p><a href="tel://1234567920">+ <?php  echo $row['MobileNumber'];?></a></p>
 	          </div>
           </div>
@@ -78,7 +78,7 @@ while ($row=mysqli_fetch_array($ret)) {
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-paper-plane"></span>
           		</div>
-          		<h3 class="mb-4">Email Address</h3>
+          		<h3 class="mb-4">Email</h3>
 	            <p><a href="mailto:info@yoursite.com"><?php  echo $row['Email'];?></a></p>
 	          </div>
           </div>
@@ -87,7 +87,7 @@ while ($row=mysqli_fetch_array($ret)) {
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-globe"></span>
           		</div>
-          		<h3 class="mb-4">Timing</h3>
+          		<h3 class="mb-4">เวลเ</h3>
 	            <p><?php  echo $row['Timing'];?></p>
 	          </div>
           </div>

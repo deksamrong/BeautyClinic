@@ -13,15 +13,13 @@ if(isset($_POST['submit']))
       $remark=$_POST['remark'];
       $status=$_POST['status'];
      
-    
-     
    $query=mysqli_query($con, "update  tblappointment set Remark='$remark',Status='$status' where ID='$cid'");
     if ($query) {
-    $msg="All remark has been updated.";
+    $msg="ทำรายการสำเร็จ.";
   }
   else
     {
-      $msg="Something Went Wrong. Please try again";
+      $msg="มีบางอย่างผิดพลาด กรุณาลองใหม่อีกครั้ง";
     }
 
   
@@ -74,15 +72,13 @@ if(isset($_POST['submit']))
 		<div id="page-wrapper">
 			<div class="main-page">
 				<div class="tables">
-					<h3 class="title1">View Appointment</h3>
-					
-					
+					<h3 class="title1">รายละเอียดการจอง</h3>	
 				
 					<div class="table-responsive bs-example widget-shadow">
 						<p style="font-size:16px; color:red" align="center"> <?php if($msg){
     echo $msg;
   }  ?> </p>
-						<h4>View Appointment:</h4>
+						<h4>รายละเอียดการจอง:</h4>
 						<?php
 $cid=$_GET['viewid'];
 $ret=mysqli_query($con,"select * from tblappointment where ID='$cid'");
@@ -133,12 +129,12 @@ while ($row=mysqli_fetch_array($ret)) {
     <td> <?php  
 if($row['Status']=="1")
 {
-  echo "Selected";
+  echo "อนุมัติ";
 }
 
 if($row['Status']=="2")
 {
-  echo "Rejected";
+  echo "ยกเลิก";
 }
 
      ;?></td>
@@ -157,11 +153,11 @@ if($row['Status']=="2")
    </tr>
 
   <tr>
-    <th>Status :</th>
+    <th>สถานะ:</th>
     <td>
    <select name="status" class="form-control wd-450" required="true" >
-     <option value="1" selected="true">Selected</option>
-     <option value="2">Rejected</option>
+     <option value="1" selected="true">อนุมัติ</option>
+     <option value="2">ยกเลิก</option>
    </select></td>
   </tr>
 
@@ -173,7 +169,7 @@ if($row['Status']=="2")
 						</table>
 						<table class="table table-bordered">
 							<tr>
-    <th>Remark</th>
+    <th>หมายเหตุ</th>
     <td><?php echo $row['Remark']; ?></td>
   </tr>
 
