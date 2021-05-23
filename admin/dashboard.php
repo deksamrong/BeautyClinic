@@ -67,8 +67,8 @@ if (strlen($_SESSION['bpmsaid']==0)) {
 $totalcust=mysqli_num_rows($query1);
 ?>
 						<div class="stats-left ">
-							<h5>Total</h5>
-							<h4>Customer</h4>
+							<h5>จำนวน</h5>
+							<h4>ลูกค้า</h4>
 						</div>
 						<div class="stats-right">
 							<label> <?php echo $totalcust;?></label>
@@ -80,8 +80,8 @@ $totalcust=mysqli_num_rows($query1);
 $totalappointment=mysqli_num_rows($query2);
 ?>
 						<div class="stats-left">
-							<h5>Total</h5>
-							<h4>Appointment</h4>
+							<h5>จำนวน</h5>
+							<h4>รายการจอง</h4>
 						</div>
 						<div class="stats-right">
 							<label> <?php echo $totalappointment;?></label>
@@ -93,8 +93,8 @@ $totalappointment=mysqli_num_rows($query2);
 $totalaccapt=mysqli_num_rows($query3);
 ?>
 						<div class="stats-left">
-							<h5>Total</h5>
-							<h4>Accepted Apt</h4>
+							<h5>จำนวน</h5>
+							<h4>การจองที่อนุมัติ</h4>
 						</div>
 						<div class="stats-right">
 							<label><?php echo $totalaccapt;?></label>
@@ -113,8 +113,8 @@ $totalaccapt=mysqli_num_rows($query3);
 $totalrejapt=mysqli_num_rows($query4);
 ?>
 						<div class="stats-left ">
-							<h5>Total</h5>
-							<h4>Rejected Apt</h4>
+							<h5>จำนวน</h5>
+							<h4>การจองที่ยกเลิก</h4>
 						</div>
 						<div class="stats-right">
 							<label> <?php echo $totalrejapt;?></label>
@@ -126,8 +126,8 @@ $totalrejapt=mysqli_num_rows($query4);
 $totalser=mysqli_num_rows($query5);
 ?>
 						<div class="stats-left">
-							<h5>Total</h5>
-							<h4>Services</h4>
+							<h5>จำนวน</h5>
+							<h4>บริการ</h4>
 						</div>
 						<div class="stats-right">
 							<label> <?php echo $totalser;?></label>
@@ -148,8 +148,8 @@ $todysale+=$todays_sale;
 }
  ?>
 						<div class="stats-left">
-							<h5>Today</h5>
-							<h4>Sales</h4>
+							<h5>จำนวน</h5>
+							<h4>การขาย</h4>
 						</div>
 						<div class="stats-right">
 							<label> <?php echo $todysale;?></label>
@@ -177,7 +177,7 @@ $yesterdaysale+=$yesterdays_sale;
 }
  ?>
 						<div class="stats-left ">
-							<h5>Yesterday</h5>
+							<h5>เมื่อวานนี้</h5>
 							<h4>Sales</h4>
 						</div>
 						<div class="stats-right">
@@ -199,7 +199,7 @@ $tseven+=$sevendays_sale;
 }
  ?>
 						<div class="stats-left">
-							<h5>Last Sevendays</h5>
+							<h5>7 วันที่ผ่านมา</h5>
 							<h4>Sale</h4>
 						</div>
 						<div class="stats-right">
@@ -221,8 +221,8 @@ $totalsale+=$total_sale;
 }
  ?>
 						<div class="stats-left">
-							<h5>Total</h5>
-							<h4>Sales</h4>
+							<h5>จำนวน</h5>
+							<h4>การขาย</h4>
 						</div>
 						<div class="stats-right">
 							<label><?php echo $totalsale;?></label>
