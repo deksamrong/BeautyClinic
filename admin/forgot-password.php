@@ -23,7 +23,7 @@ if(isset($_POST['submit']))
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>BPMS | Forgot Page </title>
+<title>ระบบจัดการจองบริการคลินิกเสริมความงาม | Forgot Page </title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
@@ -53,16 +53,16 @@ if(isset($_POST['submit']))
 <link href="css/custom.css" rel="stylesheet">
 <!--//Metis Menu -->
 </head> 
-<body class="cbp-spmenu-push">
+<body class="cbp">
 	<div class="main-content">
 		
 		<!-- main content start-->
 		<div id="page-wrapper">
 			<div class="main-page login-page ">
-				<h3 class="title1">Forgot Page</h3>
+				<h3 class="title1">ลืมรหัสผ่าน</h3>
 				<div class="widget-shadow">
 					<div class="login-top">
-						<h4>Welcome back to BPMS AdminPanel ! </h4>
+						<h4>ระบบจัดการคลินิกเสริมความงาม! </h4>
 					</div>
 					<div class="login-body">
 						<form role="form" method="post" action="">
@@ -71,13 +71,13 @@ if(isset($_POST['submit']))
   }  ?> </p>
 							<input type="text" name="email" class="lock" placeholder="Email" required="true">
 							
-							<input type="text" name="contactno" class="lock" placeholder="Mobile Number" required="true" maxlength="10" pattern="[0-9]+">
+							<input type="text" name="contactno" class="lock" placeholder="เบอร์โทรศัพท์ " required="true" maxlength="10" pattern="[0-9]+">
 							
 							<input type="submit" name="submit" value="Reset">
 							<div class="forgot-grid">
 								
 								<div class="forgot">
-									<a href="index.php">Already have an account</a>
+									<a href="index.php">เป็นสมาชิกอยู่แล้ว?</a>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
