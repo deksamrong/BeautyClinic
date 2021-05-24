@@ -27,7 +27,9 @@ if(isset($_POST['submit']))
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>BPMS | Add Services</title>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ระบบจัดการคลินิกความงาม</title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
@@ -69,10 +71,10 @@ if(isset($_POST['submit']))
 		<div id="page-wrapper">
 			<div class="main-page">
 				<div class="forms">
-					<h3 class="title1">Add Services</h3>
+					<h3 class="title1">เพิ่มบริการ</h3>
 					<div class="form-grids row widget-shadow" data-example-id="basic-forms"> 
 						<div class="form-title">
-							<h4>Parlour Services:</h4>
+							<h4>บริการของคลินิก:</h4>
 						</div>
 						<div class="form-body">
 							<form method="post">
@@ -81,7 +83,8 @@ if(isset($_POST['submit']))
   }  ?> </p>
 
   
-							 <div class="form-group"> <label for="exampleInputEmail1">ชื่อบริการ</label> <input type="text" class="form-control" id="sername" name="sername" placeholder="Service Name" value="" required="true"> </div> <div class="form-group"> <label for="exampleInputPassword1">Cost</label> <input type="text" id="cost" name="cost" class="form-control" placeholder="Cost" value="" required="true"> </div>
+							 <div class="form-group"> <label for="exampleInputEmail1">ชื่อบริการ</label> <input type="text" class="form-control" id="sername" name="sername" placeholder="Service Name" value="" required="true"> </div> 
+							 <div class="form-group"> <label for="exampleInputPassword1">ราคา</label> <input type="text" id="cost" name="cost" class="form-control" placeholder="Cost" value="" required="true"> </div>
 							
 							  <button type="submit" name="submit" class="btn btn-default">เพิ่ม</button> </form> 
 						</div>

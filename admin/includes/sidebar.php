@@ -78,10 +78,10 @@
               <a href="invoices.php" class="chart-nav"><i class="fa fa-file-text-o nav_icon"></i>บิลขาย</a>
       </li>
       <li>
-         <a href=""><i class="fa fa-cogs nav_icon"></i>ตั้งค่าระบบ<span class="fa arrow"></span> </a>
+         <a href="setting.php"><i class="fa fa-cogs nav_icon"></i>ตั้งค่าระบบ<span class="fa arrow"></span> </a>
               <ul class="nav nav-second-level collapse">
                 <li>
-                  <a href="">ตั้งค่าพื้นฐาน</a>
+                  <a href="setting.php">ตั้งค่าพื้นฐาน</a>
                 </li>
                 <li>
                   <a href="user.php">ผู้ใช้งาน</a>

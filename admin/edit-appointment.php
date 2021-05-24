@@ -138,8 +138,8 @@ if($row['Status']=="2")
     <th>Status :</th>
     <td>
    <select name="status" class="form-control wd-450" required="true" >
-     <option value="1" selected="true">Selected</option>
-     <option value="2">Rejected</option>
+     <option value="1" selected="true">อนุมัติ</option>
+     <option value="2">ไม่อนุมัติ</option>
    </select></td>
   </tr>
 
