@@ -29,6 +29,8 @@ if (strlen($_SESSION['bpmsaid']==0)) {
 <!--webfonts-->
 <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <!--//webfonts--> 
+<!-- TABLE STYLES-->
+<link href="js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
 <!--animate-->
 <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
 <script src="js/wow.min.js"></script>
@@ -55,22 +57,60 @@ if (strlen($_SESSION['bpmsaid']==0)) {
 			<div class="main-page">
 				<div class="tables">
 					<h3 class="title1">รายการจองทั้งหมด</h3>
-					
-					
-				
 					<div class="table-responsive bs-example widget-shadow">
-						<h4>การจองทั้งหมด:</h4>
-						<table class="table table-bordered"> <thead> <tr> <th>#</th> <th> หมายเลขจอง</th> <th>ชื่อ</th><th>เบอร์ติดต่อ</th> <th>วันที่จอง</th><th>Appointment Time</th><th>Action</th> </tr> </thead> <tbody>
-<?php
+						<h4></h4>
+<div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                             Advanced Tables
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+										<th>#</th> 
+										<th> หมายเลขจอง</th> 
+										<th>ชื่อ</th>
+										<th>เบอร์ติดต่อ</th> 
+										<th>วันที่จอง</th>
+										<th>Appointment Time</th
+										><th>Action</th>
+                                        </tr>
+                                    </thead>
+									
+                                    <tbody>
+									<?php
 $ret=mysqli_query($con,"select *from  tblappointment");
 $cnt=1;
 while ($row=mysqli_fetch_array($ret)) {
 
 ?>
-
-						 <tr> <th scope="row"><?php echo $cnt;?></th> <td><?php  echo $row['AptNumber'];?></td> <td><?php  echo $row['Name'];?></td><td><?php  echo $row['PhoneNumber'];?></td><td><?php  echo $row['AptDate'];?></td> <td><?php  echo $row['AptTime'];?></td> <td><a href="view-appointment.php?viewid=<?php echo $row['ID'];?>">View</a></td> </tr>   <?php 
+									<tr>
+                                            <td><?php echo $cnt;?></td>
+                                            <td><?php  echo $row['AptNumber'];?></td>
+                                            <td><?php  echo $row['Name'];?></td>
+                                            <td class="center"><?php  echo $row['PhoneNumber'];?></td>
+                                            <td class="center"><?php  echo $row['AptDate'];?></td>
+											<td class="center"><?php  echo $row['AptTime'];?></td>
+											<td class="center"><a href="view-appointment.php?viewid=<?php echo $row['ID'];?>">View</a></td>
+                                        </tr>
+<?php 
 $cnt=$cnt+1;
-}?></tbody> </table> 
+}?>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                </div>
+            </div>
+                <!-- /. ROW  -->
 					</div>
 				</div>
 			</div>
@@ -105,6 +145,14 @@ $cnt=$cnt+1;
 	<!--//scrolling js-->
 	<!-- Bootstrap Core JavaScript -->
 	<script src="js/bootstrap.js"> </script>
+	 <!-- DATA TABLE SCRIPTS -->
+	 <script src="js/dataTables/jquery.dataTables.js"></script>
+    <script src="js/dataTables/dataTables.bootstrap.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#dataTables-example').dataTable();
+            });
+    </script>
 </body>
 </html>
 <?php }  ?>

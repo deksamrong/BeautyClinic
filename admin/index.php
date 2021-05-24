@@ -71,8 +71,7 @@ if(isset($_POST['login']))
 							<input type="password" name="password" class="lock" placeholder="Password" required="true">
 							<input type="submit" name="login" value="เข้าสู่ระบบ">
 							<div class="forgot-grid">
-								
-								
+
 								<div class="clearfix"> </div>
 							</div>
 							<div class="forgot-grid">

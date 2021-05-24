@@ -31,11 +31,13 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>คลินิกเสริมความงาม| ยินดีต้อนรับ</title>
         
-    <link href="https://fonts.googleapis.com/css?family=Prompt:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Prompt:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900,900i" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -57,7 +59,7 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-	  <?php include_once('includes/header.php');?>
+	  <?php //include_once('includes/header.php');?>
     <!-- END nav -->
 
     <section id="home-section" class="hero" style="background-image: url(images/bg.jpg);" data-stellar-background-ratio="0.5">
