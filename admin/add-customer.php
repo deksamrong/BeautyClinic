@@ -13,8 +13,6 @@ if(isset($_POST['submit']))
    $mobilenum=$_POST['mobilenum'];
     $gender=$_POST['gender'];
 $details=$_POST['details'];
- 
-     
     $query=mysqli_query($con, "insert into  tblcustomers(Name,Email,MobileNumber,Gender,Details) value('$name','$email','$mobilenum','$gender','$details')");
     if ($query) {
 echo "<script>alert('บันทึกข้อมูลสำเร็จ.');</script>"; 
@@ -68,33 +66,32 @@ echo "<script>alert('มีบางอย่างผิดพลาด. กร
 		<div id="page-wrapper">
 			<div class="main-page">
 				<div class="forms">
-					<h3 class="title1">Add Customer</h3>
+					<h3 class="title1">เพิ่มลูกค้า</h3>
 					<div class="form-grids row widget-shadow" data-example-id="basic-forms"> 
 						<div class="form-title">
-							<h4>Parlour Customer:</h4>
+							<h4>ลูกค้า:</h4>
 						</div>
 						<div class="form-body">
 							<form method="post">
 								<p style="font-size:16px; color:red" align="center"> <?php if($msg){
     echo $msg;
   }  ?> </p>
-
   
 							 <div class="form-group"> <label for="exampleInputEmail1">ชื่อ</label> <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" value="" required="true"> </div> <div class="form-group"> <label for="exampleInputPassword1">Email</label> <input type="email" id="email" name="email" class="form-control" placeholder="Email" value="" required="true"> </div>
 							 <div class="form-group"> <label for="exampleInputEmail1">หมายเลขโทรศัพท์</label> <input type="text" class="form-control" id="mobilenum" name="mobilenum" placeholder="Mobile Number" value="" required="true" maxlength="10" pattern="[0-9]+"> </div>
 							 <div class="radio">
 
                                <p style="padding-top: 20px; font-size: 15px"> <strong>เพศ:</strong> <label>
-                                    <input type="radio" name="gender" id="gender" value="Female" checked="true">
+                                    <input type="radio" name="gender" id="gender" value="หญิง" checked="true">
                                     หญิง
                                 </label>
                                 <label>
-                                    <input type="radio" name="gender" id="gender" value="Male">
+                                    <input type="radio" name="gender" id="gender" value="ชาย">
                                     ชาย
                                 </label>
                                 <label>
-                                    <input type="radio" name="gender" id="gender" value="Transgender">
-                                   Transgender
+                                    <input type="radio" name="gender" id="gender" value="อื่นๆ">
+                                   อื่นๆ
                                 </label></p>
                             </div>
 							 	<div class="form-group"> <label for="exampleInputEmail1">รายละเอียด</label> <textarea type="text" class="form-control" id="details" name="details" placeholder="Details" required="true" rows="12" cols="4"></textarea> </div>
