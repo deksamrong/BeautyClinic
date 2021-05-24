@@ -33,9 +33,9 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
   <head>
     <title>คลินิกเสริมความงาม| ยินดีต้อนรับ</title>
         
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:400,400i,700,700i,900,900i" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -63,115 +63,15 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
     <section id="home-section" class="hero" style="background-image: url(images/bg.jpg);" data-stellar-background-ratio="0.5">
 		  <div class="home-slider owl-carousel">
 	      <div class="slider-item js-fullheight">
-	      	<div class="overlay"></div>
-	        <div class="container-fluid p-0">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<img class="one-third align-self-end order-md-last img-fluid" src="images/bg_1.png" alt="">
-		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text mt-5">
-		          		<span class="subheading">ทดสอบ</span>
-			            <h1 class="mb-4">เสริมจมูก</h1>
-			            <p class="mb-4">วันนี้.</p>
-			            
-			           
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-
-	      <div class="slider-item js-fullheight">
-	      	<div class="overlay"></div>
-	        <div class="container-fluid p-0">
-	          <div class="row d-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
-	          	<img class="one-third align-self-end order-md-last img-fluid" src="images/bg_2.png" alt="">
-		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text mt-5">
-		          		<span class="subheading">เสริมจมูก</span>
-			            <h1 class="mb-4">เสริมจมูก</h1>
-			            <p class="mb-4">เสริมจมูกคุณภาพ Clinic ดีอย่างไร ?<br>
-– คุณภาพดี ไม่บวม ไม่ช้ำ ฟื้นตัวเร็ว ไม่จำเป็นต้องลางาน<br>
-– ซิลิโคนคุณภาพสูง ทรงสวย ปลอดภัย ทั้งจากประเทศเกาหลี และอเมริกา<br>
-– เหลาซิลิโคน เคสต่อเคส เพื่อให้เข้ากับทรงจมูกและใบหน้าของแต่ละบุคคล<br>
-– แพทย์เฉพาะทางด้านศัลยกรรม ผ่านการอบรมจากประเทศไทยและเกาหลี.</p>
-			            
-			           
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
+	      	
 	      </div>
 	    </div>
     </section>
-
-
 <br>
     <section class="ftco-section ftco-no-pt ftco-booking">
     	<div class="container-fluid px-0">
     		<div class="row no-gutters d-md-flex justify-content-end">
-    			<div class="one-forth d-flex align-items-end">
-    				<div class="text">
-    					<div class="overlay"></div>
-    					<div class="appointment-wrap">
-    						<span class="subheading">รายการจอง</span>
-								<h3 class="mb-2">ทำการจอง</h3>
-		    	<form action="" method="post" class="appointment-form">
-			            <div class="row">
-			              <div class="col-sm-12">
-			                <div class="form-group">
-					              <input type="text" class="form-control" id="name" placeholder="Name" name="name" required="true">
-					            </div>
-			              </div>
-			              <div class="col-sm-12">
-			                <div class="form-group">
-					              <input type="email" class="form-control" id="appointment_email" placeholder="Email" name="email" required="true">
-					            </div>
-			              </div>
-				            <div class="col-sm-12">
-			                <div class="form-group">
-					              <div class="select-wrap">
-		                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-		                      <select name="services" id="services" required="true" class="form-control">
-		                      	<option value="">เลือกบริการ</option>
-		                      	<?php $query=mysqli_query($con,"select * from tblservices");
-              while($row=mysqli_fetch_array($query))
-              {
-              ?>
-		                       <option value="<?php echo $row['ServiceName'];?>"><?php echo $row['ServiceName'];?></option>
-		                       <?php } ?> 
-		                      </select>
-		                    </div>
-					            </div>
-			              </div>
-			              <div class="col-sm-12">
-			                <div class="form-group">
-			                  <input type="text" class="form-control appointment_date" placeholder="Date" name="adate" id='adate' required="true">
-			                </div>    
-			              </div>
-			              <div class="col-sm-12">
-			                <div class="form-group">
-			                  <input type="text" class="form-control appointment_time" placeholder="Time" name="atime" id='atime' required="true">
-			                </div>
-			              </div>
-			              <div class="col-sm-12">
-			                <div class="form-group">
-			                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" required="true" maxlength="10" pattern="[0-9]+">
-			                </div>
-			              </div>
-				          </div>
-				          <div class="form-group">
-						  <button type="submit" name="submit" class="btn btn-default">ตกลง</button>
-						 <input type="submit" value="Submit" name="submit" class="btn btn-primary"/>
-			              
-			            </div>
-			          </form>
-		          </div>
-						</div>
-    			</div>
-					<div class="one-third">
-						<div class="img" style="background-image: url(images/bg-1.jpg);">
-						</div>
-					</div>
+    			
     		</div>
     	</div>
     </section>
