@@ -73,10 +73,10 @@ $timing=$_POST['timing'];
 		<div id="page-wrapper">
 			<div class="main-page">
 				<div class="forms">
-					<h3 class="title1">Update Contact Us</h3>
+					<h3 class="title1">เกี่ยวกับ</h3>
 					<div class="form-grids row widget-shadow" data-example-id="basic-forms"> 
 						<div class="form-title">
-							<h4>Update Contact Us:</h4>
+							<h4>ปรับปรุง:</h4>
 						</div>
 						<div class="form-body">
 							<form method="post">
@@ -92,7 +92,12 @@ while ($row=mysqli_fetch_array($ret)) {
 ?>
 
   
-							 <div class="form-group"> <label for="exampleInputEmail1">Page Title</label> <input type="text" class="form-control" name="pagetitle" id="pagetitle" value="<?php  echo $row['PageTitle'];?>" required="true"> </div><div class="form-group"> <label for="exampleInputEmail1">Email</label> <input type="text" class="form-control" name="email" id="email" value="<?php  echo $row['Email'];?>" required="true"> </div><div class="form-group"> <label for="exampleInputEmail1">Mobile Number</label> <input type="text" class="form-control" name="mobnumber" id="mobnumber" value="<?php  echo $row['MobileNumber'];?>" required="true"> </div><div class="form-group"> <label for="exampleInputEmail1">Timing</label> <input type="text" class="form-control" name="timing" id="timing" value="<?php  echo $row['Timing'];?>" required="true"> </div> <div class="form-group"> <label for="exampleInputPassword1">รายละเอียด</label> <textarea name="pagedes" id="pagedes" rows="5" class="form-control">
+							 <div class="form-group"> <label for="exampleInputEmail1">หัวข้อ</label> 
+							 <input type="text" class="form-control" name="pagetitle" id="pagetitle" value="<?php  echo $row['PageTitle'];?>" required="true"> </div>
+							 <div class="form-group"> <label for="exampleInputEmail1">Email</label>
+							  <input type="text" class="form-control" name="email" id="email" value="<?php  echo $row['Email'];?>" required="true"> </div>
+							  <div class="form-group"> <label for="exampleInputEmail1">หมายเลขโทรศัพท์</label> <input type="text" class="form-control" name="mobnumber" id="mobnumber" value="<?php  echo $row['MobileNumber'];?>" required="true"> </div>
+							  <div class="form-group"> <label for="exampleInputEmail1">เวลาทำการ</label> <input type="text" class="form-control" name="timing" id="timing" value="<?php  echo $row['Timing'];?>" required="true"> </div> <div class="form-group"> <label for="exampleInputPassword1">รายละเอียด</label> <textarea name="pagedes" id="pagedes" rows="5" class="form-control">
         <?php  echo $row['PageDescription'];?></textarea> </div>
 							 <?php } ?>
 							  <button type="submit" name="submit" class="btn btn-default">Update</button> </form> 

@@ -78,7 +78,7 @@ if(isset($_POST['search']))
 
 $sdata=$_POST['searchdata'];
   ?>
-  <h4 align="center">Result against "<?php echo $sdata;?>" keyword </h4> 
+  <h4 align="center">ค้นหาอีกครั้ง "<?php echo $sdata;?>" keyword </h4> 
 						<table class="table table-bordered"> 
 							<thead> <tr> 
 								<th>#</th> 

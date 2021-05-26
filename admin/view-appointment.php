@@ -30,7 +30,7 @@ if(isset($_POST['submit']))
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>ระบบจัดการจองบริการ || View Appointment</title>
+<title>ระบบจัดการจองบริการ || มูลอาคลินิก</title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
