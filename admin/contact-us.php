@@ -21,7 +21,7 @@ $timing=$_POST['timing'];
   }
   else
     {
-      $msg="Something Went Wrong. Please try again";
+      $msg="มีบางอย่างผิดพลาด กรุณาลองใหม่อีกครั้ง";
     }
 
   
@@ -30,7 +30,7 @@ $timing=$_POST['timing'];
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>BPMS | Contact Us</title>
+<title>ระบบจัดการคลินิกความงาม</title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
