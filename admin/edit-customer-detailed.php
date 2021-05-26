@@ -31,7 +31,7 @@ $details=$_POST['details'];
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>BPMS | Update Services</title>
+<title>ระบบจัดการจองบริการคลีนิคความงาม</title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
@@ -73,10 +73,10 @@ $details=$_POST['details'];
 		<div id="page-wrapper">
 			<div class="main-page">
 				<div class="forms">
-					<h3 class="title1">Update Services</h3>
+					<h3 class="title1">แก้ไขข้อมูลลูกค้า</h3>
 					<div class="form-grids row widget-shadow" data-example-id="basic-forms"> 
 						<div class="form-title">
-							<h4>Update Parlour Services:</h4>
+							<h4>แก้ไขข้อมูลลูกค้า:</h4>
 						</div>
 						<div class="form-body">
 							<form method="post">
@@ -92,28 +92,28 @@ while ($row=mysqli_fetch_array($ret)) {
 ?> 
 
   
-							 <div class="form-group"> <label for="exampleInputEmail1">Name</label> <input type="text" class="form-control" id="name" name="name"  value="<?php  echo $row['Name'];?>" required="true"> </div> <div class="form-group"> <label for="exampleInputPassword1">Email</label> <input type="text" id="email" name="email" class="form-control"  value="<?php  echo $row['Email'];?>" required="true"> </div>
-							 <div class="form-group"> <label for="exampleInputPassword1">เบอร์โทร</label> <input type="text" id="mobilenum" name="mobilenum" class="form-control"  value="<?php  echo $row['MobileNumber'];?>" required="true"> </div>
-							 <div class="form-group"> <label for="exampleInputPassword1">Gender</label> <?php if($row['Gender']=="Male")
-{?><input type="radio" id="gender" name="gender" value="Male" checked="true">ชาย
-
-                     <input type="radio" name="gender" value="Female">หญิง
-                     <input type="radio" name="gender" value="Transgender">Transgender
-                   <?php } ?>
-<?php if($row['Gender']=="Female")
-{?><input type="radio" id="gender" name="gender" value="Male" >Male
-
-                     <input type="radio" name="gender" value="Female" checked="true">Female
-                     <input type="radio" name="gender" value="Transgender">Transgender
-                   <?php } 
-
-                    else {?>
- <input type="radio" id="gender" name="gender" value="Male" >Male
-  <input type="radio" name="gender" value="Female" >Female
-  <input type="radio" name="gender" value="Transgender" checked="true">Transgender
+	 <div class="form-group"> <label for="exampleInputEmail1">ชื่อลูกค้า</label> 
+	 <input type="text" class="form-control" id="name" name="name"  value="<?php  echo $row['Name'];?>" required="true"> </div> <div class="form-group"> <label for="exampleInputPassword1">Email</label> <input type="text" id="email" name="email" class="form-control"  value="<?php  echo $row['Email'];?>" required="true"> </div>
+		 <div class="form-group"> <label for="exampleInputPassword1">เบอร์โทร</label> 
+		 <input type="text" id="mobilenum" name="mobilenum" class="form-control"  value="<?php  echo $row['MobileNumber'];?>" required="true"> </div>
+			 <div class="form-group"> <label for="exampleInputPassword1">เพศ</label> 
+	<?php if($row['Gender']=="1"){?>
+					<input type="radio"  name="gender" value="1" checked="true">ชาย
+                     <input type="radio" name="gender" value="2">หญิง
+                     <input type="radio" name="gender" value="3">อื่นๆ
+                   <?php }  ?>
+<?php if($row['Gender']=="2"){?>
+					<input type="radio"  name="gender" value="1" >ชาย
+                     <input type="radio" name="gender" value="2" checked="true">หญิง
+                     <input type="radio" name="gender" value="3">อื่นๆ
+					 <?php }  ?>
+<?php if($row['Gender']=="3"){?>
+ 					<input type="radio"  name="gender" value="1" >ชาย
+  					<input type="radio" name="gender" value="2" >หญิง
+  					<input type="radio" name="gender" value="3" checked="true">อื่นๆ
                    <?php }?>
-                   <div class="form-group"> <label for="exampleInputEmail1">Details</label> <textarea type="text" class="form-control" id="details" name="details" placeholder="Details" required="true" rows="12" cols="4"><?php  echo $row['Details'];?></textarea> </div>
-                   <div class="form-group"> <label for="exampleInputPassword1">Creation Date</label> <input type="text" id="" name="" class="form-control"  value="<?php  echo $row['CreationDate'];?>" readonly='true'> </div>
+                   <div class="form-group"> <label for="exampleInputEmail1">รายละเอียด</label> <textarea type="text" class="form-control" id="details" name="details" placeholder="Details" required="true" rows="12" cols="4"><?php  echo $row['Details'];?></textarea> </div>
+                   <div class="form-group"> <label for="exampleInputPassword1">วันที่สร้าง</label> <input type="text" id="" name="" class="form-control"  value="<?php  echo $row['CreationDate'];?>" readonly='true'> </div>
 
 							 <?php } ?>
 							  <button type="submit" name="submit" class="btn btn-default">Update</button> </form> 
