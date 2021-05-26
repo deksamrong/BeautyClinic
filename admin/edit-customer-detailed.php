@@ -22,7 +22,7 @@ $details=$_POST['details'];
   }
   else
     {
-      $msg="Something Went Wrong. Please try again";
+      $msg="มีบางอย่างผิดพลาด กรุณาลองใหม่อีกครั้ง";
     }
 
   
@@ -31,7 +31,7 @@ $details=$_POST['details'];
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>ระบบจัดการจองบริการคลีนิคความงาม</title>
+<title>ระบบจัดการจองบริการคลีนิคความงามมูลอา</title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
