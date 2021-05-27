@@ -8,7 +8,7 @@ include('includes/dbconnection.php');
   <head>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact us</title>    
+    <title>ติดต่อคลินิก</title>    
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
@@ -35,16 +35,8 @@ include('includes/dbconnection.php');
   <body>
 	   <?php include_once('includes/header.php');?>
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg-2.jpg');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
-          <div class="col-md-9 ftco-animate pb-5">
-            <h2 class="mb-0 bread">Contact Us</h2>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
-          </div>
-        </div>
-      </div>
+    <section class="hero-wrap hero-wrap-2" >
+  
     </section>
     
     <section class="contact-section bg-light">
