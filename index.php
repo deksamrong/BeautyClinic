@@ -59,28 +59,20 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-	  <?php //include_once('includes/header.php');?>
+	  <?php include_once('includes/header.php');?>
     <!-- END nav -->
     
-    <section id="home-section" class="hero" style="background-image: url(images/bg.jpg);" data-stellar-background-ratio="0.5">
+    <section id="home-section" style="background-image: url(images/bg.jpg);">
 		  <div class="home-slider owl-carousel">
-	      <div class="slider-item js-fullheight">
-	      	
-	      </div>
+	     
 	    </div>
     </section>
-    <section class="ftco-section ftco-no-pt ftco-booking">
-    	<div class="container-fluid px-0">
-    		<div class="row no-gutters d-md-flex justify-content-end">
-    			
-    		</div>
-    	</div>
-    </section>
+   
     <section class="ftco-section ftco-no-pb">
     	<div class="container">
     		<div class="row no-gutters justify-content-center mb-5 pb-2">
           <div class="col-md-6 text-center heading-section ftco-animate">
-          	<h4 class="w3ls_head">Thank you for applying. Your Appointment no is <?php echo $_SESSION['aptno'];?> </h4>
+          	<h4 class="w3ls_head">บริการยอดนิยมของคลินิก </h4>
         </div>
     	</div>
 			<div class="container-fluid p-0">
