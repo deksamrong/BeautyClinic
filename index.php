@@ -61,7 +61,7 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
   <body>
 	  <?php //include_once('includes/header.php');?>
     <!-- END nav -->
-
+    
     <section id="home-section" class="hero" style="background-image: url(images/bg.jpg);" data-stellar-background-ratio="0.5">
 		  <div class="home-slider owl-carousel">
 	      <div class="slider-item js-fullheight">
@@ -69,7 +69,6 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
 	      </div>
 	    </div>
     </section>
-<br>
     <section class="ftco-section ftco-no-pt ftco-booking">
     	<div class="container-fluid px-0">
     		<div class="row no-gutters d-md-flex justify-content-end">
@@ -77,9 +76,116 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
     		</div>
     	</div>
     </section>
-
-		
-		<br>
+    <section class="ftco-section ftco-no-pb">
+    	<div class="container">
+    		<div class="row no-gutters justify-content-center mb-5 pb-2">
+          <div class="col-md-6 text-center heading-section ftco-animate">
+          	<h4 class="w3ls_head">Thank you for applying. Your Appointment no is <?php echo $_SESSION['aptno'];?> </h4>
+        </div>
+    	</div>
+			<div class="container-fluid p-0">
+    		<div class="row no-gutters">
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/work-1.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+	    					<span>Stylist</span>
+	    					<h3>Makeup</h3>
+	    				</div>
+	    				<a href="images/work-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/work-2.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+	    					<span>Beauty</span>
+	    					<h3>Makeup</h3>
+	    				</div>
+	    				<a href="images/work-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/work-3.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+	    					<span>Beauty</span>
+	    					<h3>Makeup</h3>
+	    				</div>
+	    				<a href="images/work-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/work-4.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+	    					<span>Beauty</span>
+	    					<h3>Makeup</h3>
+	    				</div>
+	    				<a href="images/work-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/work-5.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+	    					<span>Beauty</span>
+	    					<h3>Makeup</h3>
+	    				</div>
+	    				<a href="images/work-5.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/work-6.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+	    					<span>Fashion</span>
+	    					<h3>Model</h3>
+	    				</div>
+	    				<a href="images/work-6.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/work-7.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+	    					<span>Beauty</span>
+	    					<h3>Makeup</h3>
+	    				</div>
+	    				<a href="images/work-7.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/work-8.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+	    					<span>Beauty</span>
+	    					<h3>Makeup</h3>
+	    				</div>
+	    				<a href="images/work-8.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+		</section>
+<br>
+    
 
 
    <?php include_once('includes/footer.php');?>

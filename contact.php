@@ -34,11 +34,8 @@ include('includes/dbconnection.php');
   </head>
   <body>
 	   <?php include_once('includes/header.php');?>
-
-    <section class="hero-wrap hero-wrap-2" >
-  
-    </section>
-    
+     <section class="hero-wrap hero-wrap-2">
+     </section>
     <section class="contact-section bg-light">
       <div class="container">
         <div class="row no-gutters d-flex contact-info">
