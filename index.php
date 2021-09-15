@@ -33,7 +33,7 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
   <head>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>คลินิกเสริมความงาม| ยินดีต้อนรับ</title>
+    <title>คลินิกเสริมความงาม | ยินดีต้อนรับ</title>
         
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -94,7 +94,7 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
 	    				<img src="images/work-2.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Beauty</span>
-	    					<h3>Makeup</h3>
+	    					<h3>มีบางอย่างผิดพลาด</h3>
 	    				</div>
 	    				<a href="images/work-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
