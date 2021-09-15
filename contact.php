@@ -74,7 +74,7 @@ while ($row=mysqli_fetch_array($ret)) {
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-globe"></span>
           		</div>
-          		<h3 class="mb-4">เวลเ</h3>
+          		<h3 class="mb-4">เวลาเปิด</h3>
 	            <p><?php  echo $row['Timing'];?></p>
 	          </div>
           </div>
