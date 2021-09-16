@@ -3,8 +3,6 @@ session_start();
 error_reporting(0);
 include('includes/dbconnection.php');
 
-
-
   ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,10 +43,10 @@ include('includes/dbconnection.php');
 			<div class="container">
 				<div class="row justify-content-center pb-3">
           <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big">Pricing</h1>
-          	<span class="subheading">Pricing</span>
-            <h2 class="mb-4">ราคา</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+          	<h1 class="big">บริการของเรา</h1>
+            <h2 class="mb-4">บริการของเรา</h2>
+            <p>บริการของเรา
+สวยอย่างปลอดภัย จนใครๆ ก็อยากมา มาที่นี่สวยคำเดียวจบ</p>
           </div>
         </div>
             <table class="table table-bordered"> <thead> <tr> <th>#</th> <th>บริการ</th> <th>ราคา</th> </tr> </thead> <tbody>
@@ -59,9 +57,123 @@ while ($row=mysqli_fetch_array($ret)) {
 
 ?>
 
-             <tr> <th scope="row"><?php echo $cnt;?></th> <td><?php  echo $row['ServiceName'];?></td> <td><?php  echo $row['Cost'];?></td> </tr>   <?php 
+ <tr> <th scope="row"><?php echo $cnt;?></th> <td><?php  echo $row['ServiceName'];?></td> <td><?php  echo $row['Cost'];?></td> </tr>   <?php 
 $cnt=$cnt+1;
-}?></tbody> </table> 
+}?>	</tbody> </table> 
+
+
+<div class="container-fluid p-0">
+    		<div class="row no-gutters">
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+            <?php
+$ret=mysqli_query($con,"select *from  tblservices");
+$cnt=1;
+while ($row=mysqli_fetch_array($ret)) {
+
+?>
+	    				<img src="images/work-1.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+              <h3><?php  echo $row['ServiceName'];?></h3>
+	    					<span><?php  echo $row['Cost'];?> บาท</span>
+	    		
+	    				</div>
+	    				<a href="images/work-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+            <?php 
+$cnt=$cnt+1;
+}?>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/work-2.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+	    					<span>Beauty</span>
+	    					<h3>Makeup</h3>
+	    				</div>
+	    				<a href="images/work-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/work-3.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+	    					<span>Beauty</span>
+	    					<h3>Makeup</h3>
+	    				</div>
+	    				<a href="images/work-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/work-4.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+	    					<span>Beauty</span>
+	    					<h3>Makeup</h3>
+	    				</div>
+	    				<a href="images/work-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/work-5.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+	    					<span>Beauty</span>
+	    					<h3>Makeup</h3>
+	    				</div>
+	    				<a href="images/work-5.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/work-6.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+	    					<span>Fashion</span>
+	    					<h3>Model</h3>
+	    				</div>
+	    				<a href="images/work-6.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/work-7.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+	    					<span>Beauty</span>
+	    					<h3>Makeup</h3>
+	    				</div>
+	    				<a href="images/work-7.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/work-8.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<div class="text">
+	    					<span>Beauty</span>
+	    					<h3>Makeup</h3>
+	    				</div>
+	    				<a href="images/work-8.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+
+
 			</div>
 		</section>
 

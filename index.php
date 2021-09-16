@@ -41,7 +41,6 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -63,64 +62,154 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
     <!-- END nav -->
     
     <section id="home-section" style="background-image: url(images/bg.jpg);">
-		  <div class="home-slider owl-carousel">
-	     
+	<div class="home-slider owl-carousel">
+	      <div class="slider-item js-fullheight">
+	      	<div class="overlay"></div>
+	        <div class="container-fluid p-0">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<img class="one-third align-self-end order-md-last img-fluid" src="images/2021010716100288061.jpg" alt="">
+		          
+	        	</div>
+	        </div>
+	      </div>
+
+	      <div class="slider-item js-fullheight">
+	      	<div class="overlay"></div>
+	        <div class="container-fluid p-0">
+	          <div class="row d-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
+	          	<img class="one-third align-self-end order-md-last img-fluid" src="images/bg_2.png" alt="">
+		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text mt-5">
+  
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
 	    </div>
     </section>
-   
+	<br>
+    <section class="ftco-section ftco-no-pt ftco-booking">
+    	<div class="container-fluid px-0">
+    		<div class="row no-gutters d-md-flex justify-content-end">
+    			<div class="one-forth d-flex align-items-end">
+    				<div class="text">
+    					<div class="overlay"></div>
+    					<div class="appointment-wrap">
+    						<span class="subheading">จองคิวบริการ</span>
+								<h3 class="mb-2">กรอกข้อมูลเพื่อทำการจองคิวล่วงหน้า</h3>
+		    				<form action="#" method="post" class="appointment-form">
+			            <div class="row">
+			              <div class="col-sm-12">
+			                <div class="form-group">
+					              <input type="text" class="form-control" id="name" placeholder="ชื่อ" name="name" required="true">
+					            </div>
+			              </div>
+			              <div class="col-sm-12">
+			                <div class="form-group">
+					              <input type="email" class="form-control" id="appointment_email" placeholder="Email" name="email" required="true">
+					            </div>
+			              </div>
+				            <div class="col-sm-12">
+			                <div class="form-group">
+					              <div class="select-wrap">
+		                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+		                      <select name="services" id="services" required="true" class="form-control">
+		                      	<option value="">เลือกบริการ</option>
+		                      	<?php $query=mysqli_query($con,"select * from tblservices");
+              while($row=mysqli_fetch_array($query))
+              {
+              ?>
+		                       <option value="<?php echo $row['ServiceName'];?>"><?php echo $row['ServiceName'];?></option>
+		                       <?php } ?> 
+		                      </select>
+		                    </div>
+					            </div>
+			              </div>
+			              <div class="col-sm-12">
+			                <div class="form-group">
+			                  <input type="text" class="form-control appointment_date" placeholder="วันที่" name="adate" id='adate' required="true">
+			                </div>    
+			              </div>
+			              <div class="col-sm-12">
+			                <div class="form-group">
+			                  <input type="text" class="form-control appointment_time" placeholder="เวลา" name="atime" id='atime' required="true">
+			                </div>
+			              </div>
+			              <div class="col-sm-12">
+			                <div class="form-group">
+			                  <input type="text" class="form-control" id="phone" name="phone" placeholder="เบอรโทรศัพท์" required="true" maxlength="10" pattern="[0-9]+">
+			                </div>
+			              </div>
+				          </div>
+				          <div class="form-group">
+			              <input type="submit" name="submit" value="จองคิว" class="btn btn-primary">
+			            </div>
+			          </form>
+		          </div>
+						</div>
+    			</div>
+					<div class="one-third">
+						<div class="img" style="background-image: url(images/2021010716100288061.jpg);">
+						</div>
+					</div>
+    		</div>
+    	</div>
+    </section>
+
     <section class="ftco-section ftco-no-pb">
     	<div class="container">
     		<div class="row no-gutters justify-content-center mb-5 pb-2">
           <div class="col-md-6 text-center heading-section ftco-animate">
-          	<h4 class="w3ls_head">บริการยอดนิยมของคลินิก </h4>
+          	<h4 class="w3ls_head">PROMOTION </h4>
         </div>
     	</div>
 			<div class="container-fluid p-0">
     		<div class="row no-gutters">
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-1.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/1631807751802-0.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Stylist</span>
 	    					<h3>Makeup</h3>
 	    				</div>
-	    				<a href="images/work-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/1631807751802-0.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-2.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/1631807751802-1.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Beauty</span>
 	    					<h3>มีบางอย่างผิดพลาด</h3>
 	    				</div>
-	    				<a href="images/work-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/1631807751802-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-3.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/1631807751802-2.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Beauty</span>
 	    					<h3>Makeup</h3>
 	    				</div>
-	    				<a href="images/work-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/1631807751802-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-4.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/1631807751802-3.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Beauty</span>
 	    					<h3>Makeup</h3>
 	    				</div>
-	    				<a href="images/work-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/1631807751802-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
@@ -139,24 +228,24 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-6.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/1631807751802-4.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Fashion</span>
 	    					<h3>Model</h3>
 	    				</div>
-	    				<a href="images/work-6.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/1631807751802-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-7.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/1631807751802-5.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Beauty</span>
 	    					<h3>Makeup</h3>
 	    				</div>
-	    				<a href="images/work-7.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/1631807751802-5.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
