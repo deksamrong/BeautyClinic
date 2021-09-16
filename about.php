@@ -36,7 +36,17 @@ include('includes/dbconnection.php');
   <body>
 	  <?php include_once('includes/header.php');?>
  
-    <br>
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('');" data-stellar-background-ratio="0.5">
+     
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate pb-5">
+            <h2 class="mb-0 bread">เกี่ยวกับ</h2>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">หน้าแรก<i class="ion-ios-arrow-forward"></i></a></span> Thank You<span> <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="ftco-section ftco-no-pb ftco-no-pt">
 			<div class="container">
 				<div class="row">
