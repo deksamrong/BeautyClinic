@@ -338,11 +338,23 @@
   });
 
   $('.appointment_date').datepicker({
-	  'format': 'm/d/yyyy',
-	  'autoclose': true
+	'format': 'd/m/yyyy',
+	'autoclose': true
 	});
 
-	$('.appointment_time').timepicker();
+	$('.appointment_time').timepicker({
+		timeformat:'H:i',
+    interval: 60,
+    minTime: '10',
+    maxTime: '6:00pm',
+    defaultTime: '11',
+    startTime: '10:00',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true,
+		ampm: true, 
+		step: '30'
+	});
 
 
 })(jQuery);

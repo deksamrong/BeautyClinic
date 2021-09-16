@@ -9,7 +9,7 @@ include('includes/dbconnection.php');
   <head>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>บริการความงาม</title>
+    <title>Thank You</title>
     
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -35,59 +35,41 @@ include('includes/dbconnection.php');
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-	  <?php include_once('includes/header.php');?>
+	   <?php include_once('includes/header.php');?>
 
- 
-
-    <section class="ftco-section ftco-pricing">
-			<div class="container">
-				<div class="row justify-content-center pb-3">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big">บริการของเรา</h1>
-            <h2 class="mb-4">บริการของเรา</h2>
-            <p>บริการของเรา
-สวยอย่างปลอดภัย จนใครๆ ก็อยากมา มาที่นี่สวยคำเดียวจบ</p>
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg-2.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate pb-5">
+            <h2 class="mb-0 bread">Thank You</h2>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home <i class="ion-ios-arrow-forward"></i></a></span> Thank You<span> <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
-            <table class="table table-bordered"> <thead> <tr> <th>#</th> <th>บริการ</th> <th>ราคา</th> </tr> </thead> <tbody>
-<?php
-$ret=mysqli_query($con,"select *from  tblservices");
-$cnt=1;
-while ($row=mysqli_fetch_array($ret)) {
-
-?>
-
- <tr> <th scope="row"><?php echo $cnt;?></th> <td><?php  echo $row['ServiceName'];?></td> <td><?php  echo $row['Cost'];?></td> </tr>   <?php 
-$cnt=$cnt+1;
-}?>	</tbody> </table> 
-
-
-<div class="container-fluid p-0">
+      </div>
+    </section>
+    
+    <section class="ftco-section ftco-no-pb">
+    	<div class="container">
+    		<div class="row no-gutters justify-content-center mb-5 pb-2">
+          <div class="col-md-6 text-center heading-section ftco-animate">
+          	<h4 class="w3ls_head">Thank you for applying. Your Appointment no is <?php echo $_SESSION['aptno'];?> </h4>
+        </div>
+    	</div>
+			<div class="container-fluid p-0">
     		<div class="row no-gutters">
-        <?php
-$ret=mysqli_query($con,"select *from  tblservices");
-$cnt=1;
-while ($row=mysqli_fetch_array($ret)) {
-
-?>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-       
 	    				<img src="images/work-1.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
-              <h3><?php  echo $row['ServiceName'];?></h3>
-	    					<span><?php  echo $row['Cost'];?> บาท</span>
-	    		
+	    					<span>Stylist</span>
+	    					<h3>Makeup</h3>
 	    				</div>
 	    				<a href="images/work-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
-           
     			</div>
-          <?php 
-$cnt=$cnt+1;
-}?>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
 	    				<img src="images/work-2.jpg" class="img-fluid" alt="Colorlib Template">
@@ -174,13 +156,9 @@ $cnt=$cnt+1;
     			</div>
     		</div>
     	</div>
-
-
-			</div>
 		</section>
 
     <?php include_once('includes/footer.php');?>
-    
   
 
   <!-- loader -->

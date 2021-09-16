@@ -60,32 +60,19 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
   <body>
 	  <?php include_once('includes/header.php');?>
     <!-- END nav -->
-    
-    <section id="home-section" style="background-image: url(images/bg.jpg);">
+    <br><br><br>
+    <section id="home-section" style="background-image: url(images/2021010716100288061.jpg);">
 	<div class="home-slider owl-carousel">
 	      <div class="slider-item js-fullheight">
 	      	<div class="overlay"></div>
 	        <div class="container-fluid p-0">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<img class="one-third align-self-end order-md-last img-fluid" src="images/2021010716100288061.jpg" alt="">
+	          	<img class="one-third align-self-end order-md-last img-fluid" src="images/202107091625809974.jpg" alt="">
 		          
 	        	</div>
 	        </div>
 	      </div>
 
-	      <div class="slider-item js-fullheight">
-	      	<div class="overlay"></div>
-	        <div class="container-fluid p-0">
-	          <div class="row d-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
-	          	<img class="one-third align-self-end order-md-last img-fluid" src="images/bg_2.png" alt="">
-		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text mt-5">
-  
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
 	    </div>
     </section>
 	<br>
@@ -149,8 +136,10 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
 		          </div>
 						</div>
     			</div>
+
+		
 					<div class="one-third">
-						<div class="img" style="background-image: url(images/2021010716100288061.jpg);">
+						<div class="img" style="background-image: url(images/Cover-for-Website-1.jpg);">
 						</div>
 					</div>
     		</div>
