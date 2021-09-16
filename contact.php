@@ -19,7 +19,6 @@ include('includes/dbconnection.php');
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
@@ -30,11 +29,25 @@ include('includes/dbconnection.php');
   </head>
   <body>
 	   <?php include_once('includes/header.php');?>
-     <section class="hero-wrap hero-wrap-2">
-     </section>
+
+     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg-2.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate pb-5">
+            <h2 class="mb-0 bread">ติดต่อคลินิก</h2>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home <i class="ion-ios-arrow-forward"></i></a></span> Thank You<span> <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="contact-section bg-light">
       <div class="container">
         <div class="row no-gutters d-flex contact-info">
+         
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15501.156266310465!2d100.6318981!3d13.7614336!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a3d7f520ca31dc!2sM%20Med%20Clinic!5e0!3m2!1sth!2sth!4v1605253197332!5m2!1sth!2sth" 
+                    width="100%" height="450" frameborder="0" style="border:0;" 
+                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           <?php
 
 $ret=mysqli_query($con,"select * from tblpage where PageType='contactus' ");
@@ -47,7 +60,7 @@ while ($row=mysqli_fetch_array($ret)) {
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-map-signs"></span>
           		</div>
-          		<h3 class="mb-4">Address</h3>
+          		<h3 class="mb-4">ที่อยู่</h3>
 	            <p><?php  echo $row['PageDescription'];?></p>
 	          </div>
           </div>
