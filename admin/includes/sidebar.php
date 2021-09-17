@@ -39,6 +39,18 @@
               </ul>
               <!-- /nav-second-level -->
             </li>
+            <li>
+              <a href="add-services.php"><i class="fa fa-cogs nav_icon"></i>ข้อมูลโปรโมชั่น<span class="fa arrow"></span> </a>
+              <ul class="nav nav-second-level collapse">
+                <li>
+                  <a href="add-promotion.php">เพิ่มโปรโมชั่น</a>
+                </li>
+                <li>
+                  <a href="manage-promotion.php">จัดการโปรโมชั่น</a>
+                </li>
+              </ul>
+              <!-- /nav-second-level -->
+            </li>
             <li class="">
               <a href="about-us.php"><i class="fa fa-book nav_icon"></i>จัดการบทความหน้าแรก <span class="fa arrow"></span></a>
               <ul class="nav nav-second-level collapse">
