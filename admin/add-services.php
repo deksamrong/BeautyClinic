@@ -6,10 +6,18 @@ if (strlen($_SESSION['bpmsaid']==0)) {
   header('location:logout.php');
   } else{
 
-if(isset($_POST['submit']))
-  {
-    $sername=$_POST['sername'];
-    $cost=$_POST['cost'];
+if(isset($_POST['submit'])) {
+    //$sername=$_POST['sername'];
+    //$cost=$_POST['cost'];
+	$dir = "images/";
+	$fileImage = $dir . basename($_FILES["file"]["name"]);
+	
+	if(move_uploaded_file($_FILES["file"]["name"], $fileImage)){
+		echo "File". basename($_FILES["file"]["name"]) . "kkk";
+	}else{
+		echo "เกิดข้อผิดพลาดในการอัพโหลด";
+	}
+/*
     $query=mysqli_query($con, "insert into  tblservices(ServiceName,Cost) value('$sername','$cost')");
     if ($query) {
     	echo "<script>alert('เพิ่มบริการสำเร็จ.');</script>"; 
@@ -20,8 +28,10 @@ if(isset($_POST['submit']))
     {
     echo "<script>alert('ข้อมูลไม่ถูกต้อง. กรุณาลองใหม่.');</script>";  	
     }
-
+*/
   
+}else{
+echo "<script>alert('ข้อมูลไม่ถูกต้อง. กรุณาลองใหม่.');</script>";  	
 }
   ?>
 <!DOCTYPE HTML>
@@ -76,16 +86,15 @@ if(isset($_POST['submit']))
 						<div class="form-title">
 							<h4>บริการของคลินิก:</h4>
 						</div>
-						<div class="form-body">
-							<form method="post">
+						<div class="form-body" >
+							<form method="post" enctype="multipart/form-data">
 								<p style="font-size:16px; color:red" align="center"> <?php if($msg){
     echo $msg;
   }  ?> </p>
 
-  
-							 <div class="form-group"> <label for="exampleInputEmail1">ชื่อบริการ</label> <input type="text" class="form-control" id="sername" name="sername" placeholder="Service Name" value="" required="true"> </div> 
-							 <div class="form-group"> <label for="exampleInputPassword1">ราคา</label> <input type="text" id="cost" name="cost" class="form-control" placeholder="Cost" value="" required="true"> </div>
-							
+							 <div class="form-group"> <label for="exampleInputEmail1">ชื่อบริการ</label> <input type="text" class="form-control" id="sername" name="sername"  value="" required="true"> </div> 
+							 <div class="form-group"> <label for="exampleInputPassword1">ราคา</label> <input type="text" id="cost" name="cost" class="form-control"  value="" required="true"> </div>
+							 <div class="form-group"> รูปภาพ<input type="file" name="file"> </div>
 							  <button type="submit" name="submit" class="btn btn-default">เพิ่ม</button> </form> 
 						</div>
 						
