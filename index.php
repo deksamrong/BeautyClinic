@@ -33,13 +33,10 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
   <head>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>คลินิกเสริมความงาม | ยินดีต้อนรับ</title>
-        
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900,900i" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <title>คลินิกเสริมความงาม | ยินดีต้อนรับ</title> 
+	<link href='https://fonts.googleapis.com/css?family=Kanit:400,300&subset=thai,latin' rel='stylesheet' type='text/css'>
+ 
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -84,7 +81,7 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
     					<div class="overlay"></div>
     					<div class="appointment-wrap">
     						<span class="subheading">จองคิวบริการ</span>
-								<h3 class="mb-2">กรอกข้อมูลเพื่อทำการจองคิวล่วงหน้า</h3>
+							<h2 class="ftco-heading-2">กรอกข้อมูลเพื่อทำการจองคิวล่วงหน้า</h2>
 		    				<form action="#" method="post" class="appointment-form">
 			            <div class="row">
 			              <div class="col-sm-12">

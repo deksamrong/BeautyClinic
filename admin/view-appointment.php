@@ -105,7 +105,7 @@ while ($row=mysqli_fetch_array($ret)) {
     <td><?php  echo $row['PhoneNumber'];?></td>
   </tr>
    <tr>
-    <th>วันที่ทำรายการ</th>
+    <th>วันที่ใช้บริการ</th>
     <td><?php  echo $row['AptDate'];?></td>
   </tr>
  
@@ -119,7 +119,7 @@ while ($row=mysqli_fetch_array($ret)) {
     <td><?php  echo $row['Services'];?></td>
   </tr>
   <tr>
-    <th>วันที่ยืนยัน</th>
+    <th>วันที่จอง</th>
     <td><?php  echo $row['ApplyDate'];?></td>
   </tr>
   

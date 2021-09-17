@@ -10,7 +10,7 @@ include('includes/dbconnection.php');
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>บริการความงาม</title>
-    
+    <link href='https://fonts.googleapis.com/css?family=Kanit:400,300&subset=thai,latin' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
@@ -44,7 +44,7 @@ include('includes/dbconnection.php');
 				<div class="row justify-content-center pb-3">
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big">บริการของเรา</h1>
-            <h2 class="mb-4">บริการของเรา</h2>
+            <h2 >บริการของเรา</h2>
             <p>บริการของเรา
 สวยอย่างปลอดภัย จนใครๆ ก็อยากมา มาที่นี่สวยคำเดียวจบ</p>
           </div>

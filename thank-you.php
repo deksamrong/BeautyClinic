@@ -37,7 +37,7 @@ include('includes/dbconnection.php');
   <body>
 	   <?php include_once('includes/header.php');?>
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg-2.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2"  data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
@@ -53,7 +53,7 @@ include('includes/dbconnection.php');
     	<div class="container">
     		<div class="row no-gutters justify-content-center mb-5 pb-2">
           <div class="col-md-6 text-center heading-section ftco-animate">
-          	<h4 class="w3ls_head">Thank you for applying. Your Appointment no is <?php echo $_SESSION['aptno'];?> </h4>
+          	<h4 class="w3ls_head">ขอขอบคุณที่ทำการจองบริการ. หมายเลขการจอง <?php echo $_SESSION['aptno'];?> </h4>
         </div>
     	</div>
 			

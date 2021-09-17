@@ -51,6 +51,7 @@ include('includes/dbconnection.php');
     <br>
     <section class="ftco-section ftco-no-pt ftco-booking">
     <div class="container">
+      
     				<div class="text">
     				
     					<div class="appointment-wrap">
