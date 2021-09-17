@@ -1,6 +1,7 @@
 <?php
 session_start();
 error_reporting(0);
+date_default_timezone_set('Asia/Bangkok');
 include('includes/dbconnection.php');
 if (strlen($_SESSION['bpmsaid']==0)) {
   header('location:logout.php');
@@ -10,10 +11,25 @@ if(isset($_POST['submit']))
   {
     $sername=$_POST['sername'];
     $cost=$_POST['cost'];
-   
+	$fileupload = $_POST['fileupload']; //รับค่าไฟล์จากฟอร์ม	
+	
+	$date = date("Ymd");	
+	$numrand = (mt_rand());
+	//เพิ่มไฟล์
+	$upload=$_FILES['fileupload'];
+	if($upload !='') {
+	$path="../images/"; 
+	$type = strrchr($_FILES['fileupload']['name'],".");
+	//ตั้งชื่อไฟล์ใหม่โดยเอาเวลาไว้หน้าชื่อไฟล์เดิม
+	$newname = $date.$numrand.$type;
+	$path_copy=$path.$newname;
+	$path_link="../images/".$newname;
+	
+	move_uploaded_file($_FILES['fileupload']['tmp_name'],$path_copy); 
+}
  $eid=$_GET['editid'];
      
-    $query=mysqli_query($con, "update  tblservices set ServiceName='$sername',Cost='$cost' where ID='$eid' ");
+    $query=mysqli_query($con, "update  tblservices set ServiceName='$sername',Cost='$cost',uploadfile='$newname' where ID='$eid' ");
     if ($query) {
     $msg="ปรับปรุงข้อมูลสำเร็จ.";
   }
@@ -76,7 +92,7 @@ if(isset($_POST['submit']))
 							<h4>ปรับปรุงบริการ:</h4>
 						</div>
 						<div class="form-body">
-							<form method="post">
+							<form method="post" enctype="multipart/form-data"> 
 								<p style="font-size:16px; color:red" align="center"> <?php if($msg){
     echo $msg;
   }  ?> </p>
@@ -89,7 +105,9 @@ while ($row=mysqli_fetch_array($ret)) {
 ?> 
 
   
-							 <div class="form-group"> <label for="exampleInputEmail1">ชื่อบริการ</label> <input type="text" class="form-control" id="sername" name="sername" placeholder="Service Name" value="<?php  echo $row['ServiceName'];?>" required="true"> </div> <div class="form-group"> <label for="exampleInputPassword1">Cost</label> <input type="text" id="cost" name="cost" class="form-control" placeholder="Cost" value="<?php  echo $row['Cost'];?>" required="true"> </div>
+							 <div class="form-group"> <label for="exampleInputEmail1">ชื่อบริการ</label> <input type="text" class="form-control" id="sername" name="sername" placeholder="Service Name" value="<?php  echo $row['ServiceName'];?>" required="true"> </div> 
+							 <div class="form-group"> <label for="exampleInputPassword1">ราคา</label> <input type="text" id="cost" name="cost" class="form-control" placeholder="Cost" value="<?php  echo $row['Cost'];?>" required="true"> </div>
+							 <div class="form-group"> รูปภาพ<input type="file" name="fileupload" id="fileupload" value="<?php  echo $row['uploadfile'];?>"> </div>
 							 <?php } ?>
 							  <button type="submit" name="submit" class="btn btn-default">Update</button> </form> 
 						</div>

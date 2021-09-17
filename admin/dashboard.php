@@ -58,7 +58,6 @@ if (strlen($_SESSION['bpmsaid']==0)) {
 		<!-- main content start-->
 		<div id="page-wrapper" class="row calender widget-shadow">
 			<div class="main-page">
-				
 			
 				<div class="row calender widget-shadow">
 					<div class="row-one">

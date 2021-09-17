@@ -9,7 +9,7 @@ include('includes/dbconnection.php');
   <head>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Thank You</title>
+    <title>ระบบจัดการคลินิก</title>
     
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">

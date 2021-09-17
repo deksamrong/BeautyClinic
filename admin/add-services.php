@@ -22,7 +22,7 @@ if($upload !='') {
 	//ตั้งชื่อไฟล์ใหม่โดยเอาเวลาไว้หน้าชื่อไฟล์เดิม
 	$newname = $date.$numrand.$type;
 	$path_copy=$path.$newname;
-	$path_link="images/".$newname;
+	$path_link="../images/".$newname;
 	
 	move_uploaded_file($_FILES['fileupload']['tmp_name'],$path_copy); 
 }
@@ -100,7 +100,7 @@ if($upload !='') {
   }  ?> </p>
 
 							 <div class="form-group"> <label for="exampleInputEmail1">ชื่อบริการ</label> <input type="text" class="form-control" id="sername" name="sername"  value="" required="true"> </div> 
-							 <div class="form-group"> <label for="exampleInputPassword1">ราคา</label> <input type="text" id="cost" name="cost" class="form-control"  value="" required="true"> </div>
+							 <div class="form-group"> <label for="exampleInputPassword1">ราคา</label> <input type="number" id="cost" name="cost" class="form-control"  value="" required="true"> </div>
 							 <div class="form-group"> รูปภาพ<input type="file" name="fileupload" id="fileupload"> </div>
 							  <button type="submit" name="submit" class="btn btn-default">เพิ่ม</button> </form> 
 						</div>

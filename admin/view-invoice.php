@@ -83,7 +83,15 @@ while ($row=mysqli_fetch_array($ret)) {
 							</tr> 
 							 <tr> 
 								<th>เพศ</th> 
-								<td><?php echo $row['Gender']?></td> 
+								<td><?php 				
+								if($row['Gender']==1){
+									echo "ชาย";
+								}else if($row['Gender']==2){	
+									echo "หญิง";
+								}
+								else{
+									echo "อื่นๆ";
+								} ?></td> 
 								<th>วันที่</th> 
 								<td colspan="3"><?php echo $row['PostingDate']?></td> 
 							</tr> 

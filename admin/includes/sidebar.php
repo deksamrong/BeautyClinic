@@ -15,7 +15,7 @@
                   <a href="all-appointment.php">การจองทั้งหมด</a>
                 </li>
                 <li>
-                  <a href="new-appointment.php">สร้างรายการใหม่</a>
+                  <a href="new-appointment.php">รายการจองมาใหม่</a>
                 </li>
                 <li>
                   <a href="accepted-appointment.php">ยืนยันการจอง</a>
