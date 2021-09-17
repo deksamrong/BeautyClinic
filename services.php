@@ -73,13 +73,13 @@ while ($row=mysqli_fetch_array($ret)) {
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
        
-	    				<img src="images/work-1.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/<?php  echo $row['uploadfile'];?>" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
               <h3><?php  echo $row['ServiceName'];?></h3>
 	    					<span><?php  echo $row['Cost'];?> บาท</span>
 	    		
 	    				</div>
-	    				<a href="images/work-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/<?php  echo $row['uploadfile'];?>" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
@@ -88,90 +88,8 @@ while ($row=mysqli_fetch_array($ret)) {
           <?php 
 $cnt=$cnt+1;
 }?>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
-	    				<img src="images/work-2.jpg" class="img-fluid" alt="Colorlib Template">
-	    				<div class="text">
-	    					<span>Beauty</span>
-	    					<h3>Makeup</h3>
-	    				</div>
-	    				<a href="images/work-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-	    					<span class="icon-expand"></span>
-	    				</a>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
-	    				<img src="images/work-3.jpg" class="img-fluid" alt="Colorlib Template">
-	    				<div class="text">
-	    					<span>Beauty</span>
-	    					<h3>Makeup</h3>
-	    				</div>
-	    				<a href="images/work-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-	    					<span class="icon-expand"></span>
-	    				</a>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
-	    				<img src="images/work-4.jpg" class="img-fluid" alt="Colorlib Template">
-	    				<div class="text">
-	    					<span>Beauty</span>
-	    					<h3>Makeup</h3>
-	    				</div>
-	    				<a href="images/work-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-	    					<span class="icon-expand"></span>
-	    				</a>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
-	    				<img src="images/work-5.jpg" class="img-fluid" alt="Colorlib Template">
-	    				<div class="text">
-	    					<span>Beauty</span>
-	    					<h3>Makeup</h3>
-	    				</div>
-	    				<a href="images/work-5.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-	    					<span class="icon-expand"></span>
-	    				</a>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
-	    				<img src="images/work-6.jpg" class="img-fluid" alt="Colorlib Template">
-	    				<div class="text">
-	    					<span>Fashion</span>
-	    					<h3>Model</h3>
-	    				</div>
-	    				<a href="images/work-6.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-	    					<span class="icon-expand"></span>
-	    				</a>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
-	    				<img src="images/work-7.jpg" class="img-fluid" alt="Colorlib Template">
-	    				<div class="text">
-	    					<span>Beauty</span>
-	    					<h3>Makeup</h3>
-	    				</div>
-	    				<a href="images/work-7.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-	    					<span class="icon-expand"></span>
-	    				</a>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="project">
-	    				<img src="images/work-8.jpg" class="img-fluid" alt="Colorlib Template">
-	    				<div class="text">
-	    					<span>Beauty</span>
-	    					<h3>Makeup</h3>
-	    				</div>
-	    				<a href="images/work-8.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-	    					<span class="icon-expand"></span>
-	    				</a>
-    				</div>
-    			</div>
+    			
+    			
     		</div>
     	</div>
 

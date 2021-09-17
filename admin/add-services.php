@@ -1,24 +1,33 @@
 <?php
 session_start();
 error_reporting(0);
+date_default_timezone_set('Asia/Bangkok');
 include('includes/dbconnection.php');
 if (strlen($_SESSION['bpmsaid']==0)) {
   header('location:logout.php');
   } else{
 
 if(isset($_POST['submit'])) {
-    //$sername=$_POST['sername'];
-    //$cost=$_POST['cost'];
-	$dir = "images/";
-	$fileImage = $dir . basename($_FILES["file"]["name"]);
+    $sername=$_POST['sername'];
+    $cost=$_POST['cost'];
+	$fileupload = $_POST['fileupload']; //รับค่าไฟล์จากฟอร์ม	
 	
-	if(move_uploaded_file($_FILES["file"]["name"], $fileImage)){
-		echo "File". basename($_FILES["file"]["name"]) . "kkk";
-	}else{
-		echo "เกิดข้อผิดพลาดในการอัพโหลด";
-	}
-/*
-    $query=mysqli_query($con, "insert into  tblservices(ServiceName,Cost) value('$sername','$cost')");
+	$date = date("Ymd");	
+	$numrand = (mt_rand());
+	//เพิ่มไฟล์
+	$upload=$_FILES['fileupload'];
+if($upload !='') {
+	$path="../images/"; 
+	$type = strrchr($_FILES['fileupload']['name'],".");
+	//ตั้งชื่อไฟล์ใหม่โดยเอาเวลาไว้หน้าชื่อไฟล์เดิม
+	$newname = $date.$numrand.$type;
+	$path_copy=$path.$newname;
+	$path_link="images/".$newname;
+	
+	move_uploaded_file($_FILES['fileupload']['tmp_name'],$path_copy); 
+}
+	$sql = "insert into  tblservices(ServiceName,Cost,uploadfile) values('$sername','$cost','$newname')";
+    $query=mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());;
     if ($query) {
     	echo "<script>alert('เพิ่มบริการสำเร็จ.');</script>"; 
     		echo "<script>window.location.href = 'add-services.php'</script>";   
@@ -28,17 +37,15 @@ if(isset($_POST['submit'])) {
     {
     echo "<script>alert('ข้อมูลไม่ถูกต้อง. กรุณาลองใหม่.');</script>";  	
     }
-*/
-  
-}else{
-echo "<script>alert('ข้อมูลไม่ถูกต้อง. กรุณาลองใหม่.');</script>";  	
+
+ 	
 }
   ?>
 <!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ระบบจัดการคลินิกความงาม</title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -94,7 +101,7 @@ echo "<script>alert('ข้อมูลไม่ถูกต้อง. กรุ
 
 							 <div class="form-group"> <label for="exampleInputEmail1">ชื่อบริการ</label> <input type="text" class="form-control" id="sername" name="sername"  value="" required="true"> </div> 
 							 <div class="form-group"> <label for="exampleInputPassword1">ราคา</label> <input type="text" id="cost" name="cost" class="form-control"  value="" required="true"> </div>
-							 <div class="form-group"> รูปภาพ<input type="file" name="file"> </div>
+							 <div class="form-group"> รูปภาพ<input type="file" name="fileupload" id="fileupload"> </div>
 							  <button type="submit" name="submit" class="btn btn-default">เพิ่ม</button> </form> 
 						</div>
 						
