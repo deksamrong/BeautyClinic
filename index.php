@@ -136,8 +136,6 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
 		          </div>
 						</div>
     			</div>
-
-		
 					<div class="one-third">
 						<div class="img" style="background-image: url(images/Cover-for-Website-1.jpg);">
 						</div>

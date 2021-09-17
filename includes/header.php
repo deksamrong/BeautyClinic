@@ -12,7 +12,7 @@
             <li class="nav-item"><a href="promotion.php" class="nav-link">โปรโมชั่น</a></li>     
             <li class="nav-item"><a href="about.php" class="nav-link">เกี่ยวกับเรา</a></li>         
             <li class="nav-item"><a href="contact.php" class="nav-link">ติดต่อ</a></li>
-            <li class="nav-item"><a href="admin/index.php" class="nav-link">เข้าสู่ระบบ</a></li>
+            <li class="nav-item"><a href="login.php" class="nav-link">เข้าสู่ระบบ</a></li>
           </ul>
         </div>
       </div>

@@ -2,13 +2,14 @@
 session_start();
 error_reporting(0);
 include('includes/dbconnection.php');
-?>
+
+  ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>เกี่ยวกับ</title>
+    <title>เข้าสู่ระบบ</title>
     
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -34,52 +35,52 @@ include('includes/dbconnection.php');
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-	  <?php include_once('includes/header.php');?>
- 
-    <section class="hero-wrap hero-wrap-2"  data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
+	   <?php include_once('includes/header.php');?>
+     <br><br><br>
+     <section class="hero-wrap hero-wrap-2" style="background-image: url(images/2021010716100288061.jpg);" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
           <div class="col-md-9 ftco-animate pb-5">
-            <h2 class="mb-0 bread">เกี่ยวกับ</h2>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">หน้าแรก<i class="ion-ios-arrow-forward"></i></a></span> Thank You<span> <i class="ion-ios-arrow-forward"></i></span></p>
+            <h2 class="mb-0 bread">เข้าสู่ระบบ</h2>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home <i class="ion-ios-arrow-forward"></i></a></span> Thank You<span> <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>
     </section>
-    <section class="ftco-section ftco-no-pb ftco-no-pt">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 d-flex">
-				
-					</div>
-					<div class="col-md-6 py-md-5 pb-5 wrap-about pb-md-5 ftco-animate">
-						<?php
-
-$ret=mysqli_query($con,"select * from tblpage where PageType='aboutus' ");
-$cnt=1;
-while ($row=mysqli_fetch_array($ret)) {
-
-?>
-	          <div class="heading-section mb-4 mt-md-5">
-	          	<h1 class="big">About</h1>
-	          	<span class="subheading"><?php  echo $row['PageTitle'];?></span>
-	           
-	          </div>
-	          <div class="pb-md-5">
-							<p><?php  echo $row['PageDescription'];?>.</p>
-							
+    <br>
+    <section class="ftco-section ftco-no-pt ftco-booking">
+    <div class="container">
+    				<div class="text">
+    				
+    					<div class="appointment-wrap">
+    						<span class="subheading">Login</span>
+								<h3 class="mb-2">เข้าสู่ระบบ</h3>
+		    				<form action="#" method="post" class="appointment-form">
+			            <div class="row">
+			              <div class="col-sm-12">
+			                <div class="form-group">
+					              <input type="email" class="form-control" id="email" placeholder="Email" name="Email" required="true">
+					            </div>
+			              </div>
+			              <div class="col-sm-12">
+			                <div class="form-group">
+					              <input type="password" class="form-control" id="password" placeholder="Password" name="Password" required="true">
+					            </div>
+			              </div>
+ 
+				          </div>
+				          <div class="form-group">
+			              <input type="submit" name="submit" value="เข้าสู่ระบบ" class="btn btn-primary">
+			            </div>
+			          </form>
+		          </div>
 						</div>
-						<?php } ?>
-					</div>
-				</div>
-			</div>
-		</section>
+</div>
+    </section>
+    <br>
 
-		<br>
-
-
-   <?php include_once('includes/footer.php');?>
+    <?php include_once('includes/footer.php');?>
   
 
   <!-- loader -->
