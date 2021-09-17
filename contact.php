@@ -44,10 +44,7 @@ include('includes/dbconnection.php');
     <section class="contact-section bg-light">
       <div class="container">
         <div class="row no-gutters d-flex contact-info">
-         
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15501.156266310465!2d100.6318981!3d13.7614336!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a3d7f520ca31dc!2sM%20Med%20Clinic!5e0!3m2!1sth!2sth!4v1605253197332!5m2!1sth!2sth" 
-                    width="100%" height="450" frameborder="0" style="border:0;" 
-                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252.79788530135684!2d100.41037681073041!3d13.882079773678619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e28f86d7c2e16b%3A0xef8311c3f5203bc!2sMular%20clinic!5e0!3m2!1sth!2sth!4v1631853133393!5m2!1sth!2sth" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           <?php
 
 $ret=mysqli_query($con,"select * from tblpage where PageType='contactus' ");
