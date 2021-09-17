@@ -49,18 +49,7 @@ include('includes/dbconnection.php');
 สวยอย่างปลอดภัย จนใครๆ ก็อยากมา มาที่นี่สวยคำเดียวจบ</p>
           </div>
         </div>
-            <table class="table table-bordered"> <thead> <tr> <th>#</th> <th>บริการ</th> <th>ราคา</th> </tr> </thead> <tbody>
-<?php
-$ret=mysqli_query($con,"select *from  tblservices");
-$cnt=1;
-while ($row=mysqli_fetch_array($ret)) {
-
-?>
-
- <tr> <th scope="row"><?php echo $cnt;?></th> <td><?php  echo $row['ServiceName'];?></td> <td><?php  echo $row['Cost'];?></td> </tr>   <?php 
-$cnt=$cnt+1;
-}?>	</tbody> </table> 
-
+           
 
 <div class="container-fluid p-0">
     		<div class="row no-gutters">
