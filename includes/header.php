@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
       <div class="logo">
-                <img src="images/Logo.png" width="240" alt="" />
+      <a href="index.php" class="nav-link"> <img src="images/Logo.png" width="240" alt="" /></a>
             </div>
         
        

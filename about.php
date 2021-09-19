@@ -35,14 +35,14 @@ include('includes/dbconnection.php');
   </head>
   <body>
 	  <?php include_once('includes/header.php');?>
- 
-    <section class="hero-wrap hero-wrap-2"  data-stellar-background-ratio="0.5">
+ <br> <br> <br>
+    <section class="hero-wrap hero-wrap-2" style="background-image: url(images/Cover-for-Website-1.jpg);" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
           <div class="col-md-9 ftco-animate pb-5">
             <h2 class="mb-0 bread">เกี่ยวกับ</h2>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">หน้าแรก<i class="ion-ios-arrow-forward"></i></a></span> Thank You<span> <i class="ion-ios-arrow-forward"></i></span></p>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">หน้าแรก<i class="ion-ios-arrow-forward"></i></a></span> About US<span> <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>

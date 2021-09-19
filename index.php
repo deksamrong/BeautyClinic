@@ -58,7 +58,7 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
 	  <?php include_once('includes/header.php');?>
     <!-- END nav -->
     <br><br><br>
-    <section id="home-section" style="background-image: url(images/2021010716100288061.jpg);">
+    <section id="home-section" style="background-image: url(images/2021010716100288061.jpg);" data-stellar-background-ratio="0.5">
 	<div class="home-slider owl-carousel">
 	      <div class="slider-item js-fullheight">
 	      	<div class="overlay"></div>

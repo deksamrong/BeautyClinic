@@ -25,11 +25,8 @@ include('includes/dbconnection.php');
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/ionicons.min.css">
-
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
@@ -37,7 +34,7 @@ include('includes/dbconnection.php');
   <body>
  <?php include_once('includes/header.php');?>
  <br><br><br>
-    <section class="hero-wrap hero-wrap-2" style="background-image: url(images/202109171788122274.jpg);" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url(images/Cover-for-Website-1.jpg);" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">

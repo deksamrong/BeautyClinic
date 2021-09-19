@@ -113,7 +113,7 @@ $totalrejapt=mysqli_num_rows($query4);
 ?>
 						<div class="stats-left ">
 							<h5>จำนวน</h5>
-							<h4>การจองที่ยกเลิก</h4>
+							<h4>ยกเลิกจอง</h4>
 						</div>
 						<div class="stats-right">
 							<label> <?php echo $totalrejapt;?></label>
@@ -148,7 +148,7 @@ $todysale+=$todays_sale;
  ?>
 						<div class="stats-left">
 							<h5>จำนวน</h5>
-							<h4>การขาย</h4>
+							<h4>ยอดขายวันนี้</h4>
 						</div>
 						<div class="stats-right">
 							<label> <?php echo $todysale;?></label>
@@ -177,7 +177,7 @@ $yesterdaysale+=$yesterdays_sale;
  ?>
 						<div class="stats-left ">
 							<h5>เมื่อวานนี้</h5>
-							<h4>Sales</h4>
+							<h4>ยอดขาย</h4>
 						</div>
 						<div class="stats-right">
 							<label> <?php echo $yesterdaysale;?></label>
@@ -199,7 +199,7 @@ $tseven+=$sevendays_sale;
  ?>
 						<div class="stats-left">
 							<h5>7 วันที่ผ่านมา</h5>
-							<h4>Sale</h4>
+							<h4>ยอดขาย</h4>
 						</div>
 						<div class="stats-right">
 							<label> <?php echo $tseven;?></label>
@@ -221,7 +221,7 @@ $totalsale+=$total_sale;
  ?>
 						<div class="stats-left">
 							<h5>จำนวน</h5>
-							<h4>การขาย</h4>
+							<h4>ยอดขายรวม</h4>
 						</div>
 						<div class="stats-right">
 							<label><?php echo $totalsale;?></label>
