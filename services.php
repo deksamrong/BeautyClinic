@@ -36,9 +36,6 @@ include('includes/dbconnection.php');
   </head>
   <body>
 	  <?php include_once('includes/header.php');?>
-
- 
-
     <section class="ftco-section ftco-pricing">
 			<div class="container">
 				<div class="row justify-content-center pb-3">
