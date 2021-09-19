@@ -84,10 +84,10 @@ return true;
 		<div id="page-wrapper">
 			<div class="main-page">
 				<div class="forms">
-					<h3 class="title1">Change Password</h3>
+					<h3 class="title1">เปลี่ยนรหัสผ่าน</h3>
 					<div class="form-grids row widget-shadow" data-example-id="basic-forms"> 
 						<div class="form-title">
-							<h4>Reset Your Password :</h4>
+							<h4>รีเซตรหัสผ่าน :</h4>
 						</div>
 						<div class="form-body">
 							<form method="post" name="changepassword" onsubmit="return checkpass();" action="">
@@ -102,10 +102,10 @@ $cnt=1;
 while ($row=mysqli_fetch_array($ret)) {
 
 ?>
-							 <div class="form-group"> <label for="exampleInputEmail1">Current Password</label> <input type="password" name="currentpassword" class="form-control" required= "true" value=""> </div> <div class="form-group"> <label for="exampleInputPassword1">New Password</label> <input type="password" name="newpassword" class="form-control" value="" required="true"> </div>
-							 <div class="form-group"> <label for="exampleInputPassword1">Confirm Password</label> <input type="password" name="confirmpassword" class="form-control" value="" required="true"> </div>
+							 <div class="form-group"> <label for="exampleInputEmail1">รหัสผ่านเดิม</label> <input type="password" name="currentpassword" class="form-control" required= "true" value=""> </div> <div class="form-group"> <label for="exampleInputPassword1">รหัสผ่านใหม่</label> <input type="password" name="newpassword" class="form-control" value="" required="true"> </div>
+							 <div class="form-group"> <label for="exampleInputPassword1">ยืนยันรหัสผ่าน</label> <input type="password" name="confirmpassword" class="form-control" value="" required="true"> </div>
 							  
-							  <button type="submit" name="submit" class="btn btn-default">Change</button> </form> 
+							  <button type="submit" name="submit" class="btn btn-default">ยืนยัน</button> </form> 
 						</div>
 						<?php } ?>
 					</div>

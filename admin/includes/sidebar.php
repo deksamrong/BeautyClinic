@@ -40,13 +40,25 @@
               <!-- /nav-second-level -->
             </li>
             <li>
-              <a href="add-services.php"><i class="fa fa-cogs nav_icon"></i>ข้อมูลโปรโมชั่น<span class="fa arrow"></span> </a>
+              <a href="add-promotion.php"><i class="fa fa-cogs nav_icon"></i>ข้อมูลโปรโมชั่น<span class="fa arrow"></span> </a>
               <ul class="nav nav-second-level collapse">
                 <li>
                   <a href="add-promotion.php">เพิ่มโปรโมชั่น</a>
                 </li>
                 <li>
                   <a href="manage-promotion.php">จัดการโปรโมชั่น</a>
+                </li>
+              </ul>
+              <!-- /nav-second-level -->
+            </li>
+            <li>
+              <a href="add-review.php"><i class="fa fa-cogs nav_icon"></i>ข้อมูลรีวิวลูกค้า<span class="fa arrow"></span> </a>
+              <ul class="nav nav-second-level collapse">
+                <li>
+                  <a href="add-review.php">เพิ่มรีวิว</a>
+                </li>
+                <li>
+                  <a href="manage-review.php">จัดการรีวิว</a>
                 </li>
               </ul>
               <!-- /nav-second-level -->

@@ -93,8 +93,8 @@ $totalappointment=mysqli_num_rows($query2);
 $totalaccapt=mysqli_num_rows($query3);
 ?>
 						<div class="stats-left">
-							<h5>Total</h5>
-							<h4>Accepted Apt</h4>
+							<h5>ทั้งหมด</h5>
+							<h4>ยืนยัน</h4>
 						</div>
 						<div class="stats-right">
 							<label><?php echo $totalaccapt;?></label>

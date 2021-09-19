@@ -48,20 +48,20 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
 
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+	
   </head>
   <body>
 	  <?php include_once('includes/header.php');?>
     <!-- END nav -->
     <br><br><br>
-    <section id="home-section" style="background-image: url(images/2021010716100288061.jpg);" data-stellar-background-ratio="0.5">
+    <section id="hero-wrap hero-wrap-2" style="background-image: url(images/2021010716100288061.jpg);" data-stellar-background-ratio="0.5">
+	<div class="overlay"></div>
 	<div class="home-slider owl-carousel">
 	      <div class="slider-item js-fullheight">
-	      	<div class="overlay"></div>
+	      
 	        <div class="container-fluid p-0">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
 	          	<img class="one-third align-self-end order-md-last img-fluid" src="images/202107091625809974.jpg" alt="">
@@ -140,12 +140,13 @@ echo "<script>window.location.href = 'thank-you.php'</script>";
     		</div>
     	</div>
     </section>
-
-    <section class="ftco-section ftco-no-pb">
+<br>
+    <section class="ftco-section ftco-no-pb" style="background-image: url(images/default-body.jpg);">
     	<div class="container">
     		<div class="row no-gutters justify-content-center mb-5 pb-2">
           <div class="col-md-6 text-center heading-section ftco-animate">
-          	<h4 class="w3ls_head">PROMOTION </h4>
+          	<h2 class="w3ls_head">โปรโมชั่น </h2>
+			  <hr>
         </div>
     	</div>
 			<div class="container-fluid p-0">
@@ -158,6 +159,7 @@ while ($row=mysqli_fetch_array($ret)) {
 ?>
 
 	<div class="col-md-6 col-lg-3 ftco-animate">
+
     				<div class="project">
 	    				<img src="images/<?php  echo $row['uploadfile'];?>" HSPACE="15" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
@@ -169,25 +171,58 @@ while ($row=mysqli_fetch_array($ret)) {
     				</div>
     			</div>	
 	
+ <?php 
+$cnt=$cnt+1;
+}?>
+
+    		</div>
+    	</div>
+</div>
+<br>
+		</section>
+		
+<section class="ftco-section ftco-no-pb" style="background-image: url(images/default-body.jpg);">
+    	<div class="container" >
+    		<div class="row no-gutters justify-content-center mb-5 pb-2" >
+          <div class="col-md-6 text-center heading-section ftco-animate" >
+          	<h4 class="w3ls_head">MULAR & REVIEW </h4>
+			  <hr>
+        </div>
+    	</div>
+			<div class="container-fluid p-0">
+    		<div class="row no-gutters">
+			<?php
+$ret=mysqli_query($con,"select * from  tblreview LIMIT 4");
+$cnt=1;
+while ($row=mysqli_fetch_array($ret)) {
+?>
+
+	<div class="col-md-6 col-lg-3 ftco-animate" >
+    				<div class="project">
+	    				<img src="images/review/<?php  echo $row['uplaodfile'];?>" HSPACE="15" class="img-fluid" alt="Colorlib Template">	
+	    				
+						<div class="text"><h5 style="color:#FFFFFF;"><?php  echo $row['reviewname'];?></h5>
+</div>
+						<a href="images/review/<?php  echo $row['uplaodfile'];?>" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>	
+	
           <?php 
 $cnt=$cnt+1;
 }?>
 
     		</div>
     	</div>
-		</section>
+</div>
 <br>
-    
-
+		</section>
 
    <?php include_once('includes/footer.php');?>
     
-  
-
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -205,6 +240,9 @@ $cnt=$cnt+1;
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+   
   </body>
 </html>
